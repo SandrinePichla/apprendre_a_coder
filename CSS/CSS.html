@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSSstyle/Style.CSS">
+    <meta name="CSS" content="Apprendre le CSS">
+    <title>CSS</title>
+</head>
+<body>
+   <h1>Où inserer le code CSS</h1>
+
+        <h2>Créer un fichier externe "Style.CSS"</h2> 
+            <ul>
+                <li>Il s'agit d'un fichier avec l'extention .CSS et non .html</li>
+                <li>Pour écrire le code CSS, à l'interieur. Il s'appliquera à tous les fichiers qui contiendront la balise &lt;link rel="stylesheet" href="../CSSstyle/Style.CSS"&gt;</li>
+                <li>La meilleure solution. On change le code du fichier CSS, qui pilote le code de tous les fichiers liés</li>
+            </ul>
+        <h2>Ecrire directement dans l'en-tête head </h2> 
+            <ul>
+                <li>Utiliser la balise &lt;Style&gt; &lt;/Style&gt;</li>
+                <li>A l'interieur de cette balise, mettre le code CSS </li>
+            </ul>   
+        <h2>Ecrire dans une balise</h2> 
+            <ul>
+                <li>Inserer à l'interieur d'une balise l'attribut Style="Color: blue"</li>
+                <li>Exemple, dans un fichier, dans une balise &lt;p Style="Color: blue"&gt;Texte du paragraphe&lt;/p&gt;</li>
+                <li>Très peu utilisé, car lorsqu'on veut modifier, il faut aller sur chaque fichier, et sur chaque attribut</li>
+            </ul>   
+    <h1>Comment fonctionne le code CSS</h1>
+    <ul>
+        <li>Pas de chevrons mais des accolades</li>
+        <li>On indique la balise mais pas entre chevrons. Juste p par exemple. Mais on peut mettre plusieurs balises à la suite exemple, p,h1,h3</li>
+        <li>Puis on ouvre l'accolade, et on écrit l'attribut exemple color=""</li>
+        <li>puis on ferme l'accolade</li>
+    </ul>
+
+</body>
+</html>
