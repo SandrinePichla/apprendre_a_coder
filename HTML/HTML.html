@@ -23,16 +23,20 @@
         <li>&lt;ul&gt; &lt;/ul&gt; Unordered Liste (avec des points) + &lt;li&gt; &lt;/li&gt; Liste avec points</li>
         <li>&lt;div&gt; &lt;/div&gt;, sépare des blocs pour appliquer un style, tel que lang. Différents attributs sont possibles</li>
         <ul>
-            <li>lang permet de dire qu'une partie est dans une languet puis dans une autre </li>
+            <li>Très importanytes avec le CSS, car permet d'utiliser l'attribut class dans une balise div pour imposer un style à une portion de texte</li>
+            <li>lang permet de dire qu'une partie est dans une langue et puis dans une autre </li>
             <li>Attribut Class exemple &lt;div class="bigText"&gt;&lt;/div&gt; augmente la taille du texte après apllication du CSS</li>
         </ul>
-        <li>contrairement à la div, le span est pour quelques mots, il ne sépare pas le texte.</li>
+        <li>contrairement à la div, le span est utilisé pour quelques mots, dans une phrase, il ne sépare pas le texte. Utilisé avec span pour insérer du CSS</li>
         <ul>
             <li>Attribut Class  exemple &lt;span class="bigWords"&gt;&gt;&lt;/span&gt; affiche les mots en plus graos avec du CSS</li>
         </ul>
     <h2>Sémantique du texte en ligne et &lt;a&gt; <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/a" target="_blank">élements d'ancre (href, target...)</a></h2>        
         <li>&lt;a href="Index.html">aller sur une autre page &lt;/a></li>
         <li>&lt;a href="Index.html" target="_blank">ouvrir dans un nouvel onglet &lt;/a&gt;</li>
+        <li>Info bulle dans lien vers une autre page du site où externe, mettre dans la balise title&lt;a href="...." title="...."&gt;description de la page</li>
+        <li>Lien pour ouvrir un mail&lt;a href="mailto :".....@..."&gt;description.</li>
+        <li>Lien vers fichier à télécharger &lt;a href="fichier.zip"&gt;</li>
         <li>&lt;a href="#mot-cle">mot clé &lt;/a&gt; pour ancrer un mot par exemple "mot clé" dans une phrase , lorsqu'on clique dessus, ça emmène vers le même mot ailleurs, il faut utiliser l'attribut id dans une balise (ex strong) : &lt;strong id=mot-cle&gt;mot clé</li>
         <li>&lt;strong&gt; &lt;/strong&gt; GRAS</li>
         <li>&lt;em&gt;>&lt;/em&gt; ITALIQUE</li>
@@ -66,10 +70,22 @@
         </ul>
             
     </li>
+    <h2>Balises particulières</h2> 
+    <ul>
+        <li>Saisir un commentaire (aide pour le dev, non visible sur la page : &lt;--Commentaires--&gt;</li>
+        <li>Balises orphelines &lt;Image /&gt; ; &lt;Br /&gt; </li>
+    </ul>
     <h2>Chemin vers une page interne au site</h2>
         <li>Si la page est dans un sous dossier, il faut noter : dossier/index.html</li>
         <li>Lorsqu'on nomme le chemin, et qu'on veut remonter vers un dossier superieur il faut noter ../ pour chaque dossier parent</li>
         <li>Lorsque le site sera hébergé, les chemins doivent commencer par / pour indiquer la racine</li>
+     <h2>Format d'image</h2>
+     <ul>
+         <li>PNG pour les logos car on peut désigner des zones transparentes</li>
+         <li>IMG src="nom de l image" alt ="description pour les mal entendants"</li>
+         <li>La balise img doit toujours se trouver dans un contenant</li>
+         <li>On peut entourer la balise img de la balise figure, et insérer figcaption="libellé de l'image"</li>
+     </ul>
         
     <h2>Commandes</h2>     
         <li>Pour insérer le code HTML d'une page standard : <a href="../Pagetype/Nouvellepagetype.html" target="_blank"> taper html:5</a>. La page est "coupée" en deux portions :

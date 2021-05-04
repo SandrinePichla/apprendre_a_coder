@@ -9,18 +9,21 @@
 <body>
    <h1>Où inserer le code CSS</h1>
 
-        <h2>Créer un fichier externe "Style.CSS"</h2> 
+        <h2>
+           <a href="../Img/CSS_Balise_link_vers_fichier_Style.JPG" target="_blank">Créer un lien vers un fichier externe "Style.CSS"</a></h2> 
             <ul>
                 <li>Il s'agit d'un fichier avec l'extention .CSS et non .html</li>
-                <li>Pour écrire le code CSS, à l'interieur. Il s'appliquera à tous les fichiers qui contiendront la balise &lt;link rel="stylesheet" href="../CSSstyle/Style.CSS"&gt;</li>
-                <li>La meilleure solution. On change le code du fichier CSS, qui pilote le code de tous les fichiers liés</li>
+                <li>On va écrire le code CSS à l'interieur de ce fichier CSS. Il s'appliquera à tous les fichiers qui contiendront la balise &lt;link rel="stylesheet" href="../CSSstyle/Style.CSS"&gt;</li>
+                <li>La meilleure solution, car lorsqu'on veut changer le code du fichier CSS, qui pilote le code de tous les fichiers liés</li>
+                <li>Lorsque l'on veut donner un style différent à une portion de texte, on insère l'attribut class= et dans le CSS, mettre.nom </li>
+                <li>On peut également utiliser l'id (#) à la place de class, mais attention, on ne peut avoir q'une seule foisréférencer qu'un seul id dans la page. Du coup, dans le CSS mettre # à la place de .</li>
             </ul>
-        <h2>Ecrire directement dans l'en-tête head </h2> 
+        <h2><a href="../Img/CSS_Balise_Style_dans_head.JPG" target="_blank">Ecrire directement dans l'en-tête head</a></h2> 
             <ul>
                 <li>Utiliser la balise &lt;Style&gt; &lt;/Style&gt;</li>
                 <li>A l'interieur de cette balise, mettre le code CSS </li>
             </ul>   
-        <h2>Ecrire dans une balise</h2> 
+        <h2><a href="../Img/CSS_Style_dans_balise_body.JPG" target="_blank">Ecrire dans une balise</a></h2> 
             <ul>
                 <li>Inserer à l'interieur d'une balise l'attribut Style="Color: blue"</li>
                 <li>Exemple, dans un fichier, dans une balise &lt;p Style="Color: blue"&gt;Texte du paragraphe&lt;/p&gt;</li>
@@ -30,9 +33,15 @@
     <ul>
         <li>Pas de chevrons mais des accolades</li>
         <li>On indique la balise mais pas entre chevrons. Juste p par exemple. Mais on peut mettre plusieurs balises à la suite exemple, p,h1,h3</li>
-        <li>Puis on ouvre l'accolade, et on écrit l'attribut exemple color=""</li>
+        <li>Puis on ouvre l'accolade, et on écrit des attributs exemple color="", font-weight=""... </li>
         <li>puis on ferme l'accolade</li>
     </ul>
+   
+   <h1>Balises</h1> 
+   <ul>
+       <li>Saisir un commentaire (aide pour le dev, non visible sur la page : <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Comments"> /* Commentaire */</a></li>
+   </ul>
+
 
 </body>
 </html>
