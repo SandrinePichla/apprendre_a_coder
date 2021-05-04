@@ -1,8 +1,83 @@
-.Apprentissage
-{
-    color:blueviolet
+html, body {margin:0; padding:0}
+body {
+background-color:white;
+margin:10px 0px 0px 30px;
 }
-.Rouge_Gras
-{
-    color:brown   
+h1 {
+font-family:arial, sans-serif;
+font-size: large;
+color:black
+background-color:transparent;
+text-align:left;
+}
+h2 {
+font-family:arial, sans-serif;
+font-size:100%;
+color:black;
+background-color:transparent;
+text-align:left;
+text-decoration:underline;
+}
+h3 {
+font-family:arial, sans-serif;
+font-size:80%;
+color:gray;
+background-color:transparent;
+text-align:left;
+}
+p {
+font-family:verdana, sans-serif;
+font-size:100%;
+color:black;
+background-color:transparent;
+text-align:left;
+margin-left:0px;
+margin-right:0px;
+}
+li {
+font-family:verdana, sans-serif;
+font-size:100%;
+color:black;
+background-color:transparent;
+text-align:left;
+margin-left:0px;
+margin-right:0px;
+}
+a:link {
+font-family:verdana, sans-serif;
+font-size:100%;
+color:#696969;
+background-color:transparent;
+text-decoration:underline;
+}
+a:visited {
+font-family:verdana, sans-serif;
+font-size:100%;
+color:mediumslateblue
+background-color:transparent;
+text-decoration:underline;
+}
+a:hover {
+font-family:verdana, sans-serif;
+font-size:100%;
+color:#00bfff;
+background-color:transparent;
+text-decoration:underline;
+}
+a:active, a:focus {
+font-family:verdana, sans-serif; font-size:100%; color:; background-color:; text-decoration:; }
+table {
+border-color:gray;
+border-style:solid;
+border-width:1px;
+}
+td {
+font-family:verdana, sans-serif;
+font-size:100%;
+color:black;
+text-align:left;
+background-color:transparent;
+border-color:silver;
+border-style:solid;
+border-width:1px;
 }
