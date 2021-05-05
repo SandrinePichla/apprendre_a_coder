@@ -11,7 +11,7 @@
    <h1>Où inserer le code CSS</h1>
 
         <h2>
-           <a href="../Img/CSS_Balise_link_vers_fichier_Style.JPG" target="_blank">Créer un lien vers un fichier externe "Style.CSS"</a></h2> 
+           <a href="img/CSS_Balise_link_vers_fichier_Style.JPG" target="_blank">Créer un lien vers un fichier externe "Style.CSS"</a></h2> 
             <ul>
                 <li>Il s'agit d'un fichier avec l'extention .CSS et non .html</li>
                 <li>On va écrire le code CSS à l'interieur de ce fichier CSS. Il s'appliquera à tous les fichiers qui contiendront la balise &lt;link rel="stylesheet" href="../CSSstyle/Style.CSS"&gt;</li>
@@ -22,30 +22,49 @@
                 <li>Pour selectionner par exemple, le premier paragraphe sous le titre h1, on note h1 + p</li>
                 <li>Pour selectionner par exemple, tous les paragraphes sous le titre h2, on note h2 p</li>
             </ul>
-        <h2><a href="../Img/CSS_Balise_Style_dans_head.JPG" target="_blank">Ecrire directement dans l'en-tête head</a></h2> 
+        <h2><a href="img/CSS_Balise_Style_dans_head.JPG" target="_blank">Ecrire directement dans l'en-tête head</a></h2> 
             <ul>
                 <li>Utiliser la balise &lt;Style&gt; &lt;/Style&gt;</li>
                 <li>A l'interieur de cette balise, mettre le code CSS </li>
             </ul>   
-        <h2><a href="../Img/CSS_Style_dans_balise_body.JPG" target="_blank">Ecrire dans une balise</a></h2> 
+        <h2><a href="img/CSS_Style_dans_balise_body.JPG" target="_blank">Ecrire dans une balise</a></h2> 
             <ul>
                 <li>Inserer à l'interieur d'une balise l'attribut Style="Color: blue"</li>
                 <li>Exemple, dans un fichier, dans une balise &lt;p Style="Color: blue"&gt;Texte du paragraphe&lt;/p&gt;</li>
                 <li>Très peu utilisé, car lorsqu'on veut modifier, il faut aller sur chaque fichier, et sur chaque attribut</li>
             </ul>   
     <h1>Comment fonctionne le code CSS</h1>
-    <ul>
-        <li>Pas de chevrons mais des accolades</li>
-        <li>On indique la balise mais pas entre chevrons. Juste p par exemple. Mais on peut mettre plusieurs balises à la suite exemple, p,h1,h3</li>
-        <li>Puis on ouvre l'accolade, et on écrit des attributs exemple color="", font-weight=""... </li>
-        <li>puis on ferme l'accolade</li>
-    </ul>
+        <ul>
+            <li>Pas de chevrons mais des accolades</li>
+            <li>On indique la balise mais pas entre chevrons. Juste p par exemple. Mais on peut mettre plusieurs balises à la suite exemple, p,h1,h3</li>
+            <li>Puis on ouvre l'accolade, et on écrit des attributs exemple color="", font-weight=""... </li>
+            <li>puis on ferme l'accolade</li>
+        </ul>
    
    <h1>Balises</h1> 
-   <ul>
-       <li>Saisir un commentaire (aide pour le dev, non visible sur la page : <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Comments"> /* Commentaire */</a></li>
-   </ul>
-
+        <ul>
+            <li>Saisir un commentaire (aide pour le dev, non visible sur la page : <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Comments"> /* Commentaire */</a></li>
+        </ul>
+    <h1>Formater le texte</h1>
+    <ul>
+        <li>La taille : font-size (16px, 1.3em, ou 110 %)</li>
+        <li>La police : font-family (arial, verdana, sans-serif)</li>
+            <li><a href="https://www.fontsquirrel.com/" target="_blank">pour en télécharger et pour l'inserer :</a> Le fichier de police (ici MaNouvellePolice.eot) doit ici être situé dans le même dossier que le fichier CSS :</li>
+            <pre>
+                @font-face {
+                    font-family: 'MaNouvellePolice';
+                    src: url('MaNouvellePolice.eot') format('eot'),
+                         url('MaNouvellePolice.woff') format('woff'),
+                         url('MaNouvellePolice.ttf') format('truetype'),
+                         url('MaNouvellePolice.svg') format('svg');
+                }
+            </pre>
+         <li>Italique (font-style: italic), gras (font-weight: bold), souligné (text-decoration: underline), barré (text-decoration: line-through)    </li>
+        <li>Alignement =  text-align: right; left; justify, center </li>
+        <li>Flottant = float: left; right </li>
+        <li>Couleur du texte = color: maroon; ou color: #FFFFFF;</li>
+       <li>Couleur du fond = background-color: black; sur la balise body</li>
+    </ul>
 
 </body>
 </html>

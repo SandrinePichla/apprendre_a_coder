@@ -1,83 +1,124 @@
+/* STYLE GENERAL */
 html, body {margin:0; padding:0}
 body {
 background-color:white;
-margin:10px 0px 0px 30px;
+margin: 10px 10px 30px 30px;
 }
+
+/* TITRE */
 h1 {
 font-family:arial, sans-serif;
-font-size: large;
-color:black
+font-size: 1.3em;
+color:rgb(9, 3, 46);
 background-color:transparent;
 text-align:left;
 }
+
 h2 {
 font-family:arial, sans-serif;
-font-size:100%;
-color:black;
-background-color:transparent;
-text-align:left;
-text-decoration:underline;
-}
-h3 {
-font-family:arial, sans-serif;
-font-size:80%;
-color:gray;
+font-size: 1.2em;
+color:rgb(206, 36, 141);
 background-color:transparent;
 text-align:left;
 }
+
+/* PARAGRAPHES */
 p {
-font-family:verdana, sans-serif;
-font-size:100%;
+font-family:arial, sans-serif;
+font-size:1.1em;
 color:black;
 background-color:transparent;
 text-align:left;
 margin-left:0px;
 margin-right:0px;
 }
+
+/* LISTES */
 li {
-font-family:verdana, sans-serif;
-font-size:100%;
+font-family:arial, sans-serif;
+font-size:1em;
 color:black;
 background-color:transparent;
 text-align:left;
 margin-left:0px;
 margin-right:0px;
 }
+
+
+/* LIENS */
+/* NON VISITES */
 a:link {
-font-family:verdana, sans-serif;
-font-size:100%;
-color:#696969;
+font-family:arial, sans-serif;
+font-size:1em;
+color:#654ecc;
 background-color:transparent;
 text-decoration:underline;
 }
+
+/* VISITES */
 a:visited {
-font-family:verdana, sans-serif;
-font-size:100%;
-color:mediumslateblue
+font-family:arial, sans-serif;
+font-size:1em;
+color:rgb(105, 31, 115);
 background-color:transparent;
 text-decoration:underline;
 }
+
+/* SURVOLES */
 a:hover {
-font-family:verdana, sans-serif;
-font-size:100%;
-color:#00bfff;
+font-family:arial, sans-serif;
+font-size:1em;
+color:#0f073d;
 background-color:transparent;
 text-decoration:underline;
 }
+
+/* TABLEAUX */
+/* TRAITS CADRE*/
 a:active, a:focus {
-font-family:verdana, sans-serif; font-size:100%; color:; background-color:; text-decoration:; }
+font-family:arial, sans-serif; font-size:1em; }
 table {
-border-color:gray;
-border-style:solid;
-border-width:1px;
-}
-td {
-font-family:verdana, sans-serif;
-font-size:100%;
-color:black;
-text-align:left;
-background-color:transparent;
 border-color:silver;
 border-style:solid;
 border-width:1px;
 }
+
+/* TABLEAUX */
+/* TRAITS CELLULE*/
+td {
+font-family:arial, sans-serif;
+font-size:1em;
+color:black;
+text-align:left;
+background-color:transparent;
+border-color:rgb(221, 219, 219);
+border-style:solid;
+border-width:1px;
+}
+
+/* BALISES AVEC ATTRIBUT CLASS */
+.Apprentissage {
+font-family:arial, sans-serif;
+font-size: 1em;
+color:rgb(25, 8, 13);
+background-color:transparent;
+text-align:left;
+text-decoration:underline;
+}
+
+/* IMAGE FLOTTANTES */
+.photocvflottante {
+float:right;
+margin-right:800px;
+}
+
+/* TEXTE PUR */
+pre {
+font-family:arial, sans-serif;
+font-size:0.8em;
+color:black;
+background-color:transparent;
+text-align:left;
+margin-left:0px;
+margin-right:0px;
+}    
