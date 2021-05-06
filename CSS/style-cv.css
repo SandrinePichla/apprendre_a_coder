@@ -1,0 +1,17 @@
+/*  STYLE POUR MON CV */
+h1
+{
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 2em;
+text-shadow: 6px 6px 6px grey;
+}
+
+figure
+{
+text-align:left;
+}
+
+h2 
+{
+border: 1px solid grey;
+}

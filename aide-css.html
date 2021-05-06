@@ -49,21 +49,55 @@
     <ul>
         <li>La taille : font-size (16px, 1.3em, ou 110 %)</li>
         <li>La police : font-family (arial, verdana, sans-serif)</li>
-            <li><a href="https://www.fontsquirrel.com/" target="_blank">pour en télécharger et pour l'inserer :</a> Le fichier de police (ici MaNouvellePolice.eot) doit ici être situé dans le même dossier que le fichier CSS :</li>
-            <pre>
-                @font-face {
-                    font-family: 'MaNouvellePolice';
-                    src: url('MaNouvellePolice.eot') format('eot'),
-                         url('MaNouvellePolice.woff') format('woff'),
-                         url('MaNouvellePolice.ttf') format('truetype'),
-                         url('MaNouvellePolice.svg') format('svg');
-                }
-            </pre>
-         <li>Italique (font-style: italic), gras (font-weight: bold), souligné (text-decoration: underline), barré (text-decoration: line-through)    </li>
-        <li>Alignement =  text-align: right; left; justify, center </li>
-        <li>Flottant = float: left; right </li>
-        <li>Couleur du texte = color: maroon; ou color: #FFFFFF;</li>
-       <li>Couleur du fond = background-color: black; sur la balise body</li>
+            <ol>
+                <li><a href="https://www.fontsquirrel.com/" target="_blank">pour en télécharger et pour l'inserer :</a> Le fichier de police (ici MaNouvellePolice.eot) doit ici être situé dans le même dossier que le fichier CSS :</li>
+                    <pre>
+                        @font-face {
+                            font-family: 'MaNouvellePolice';
+                            src: url('MaNouvellePolice.eot') format('eot'),
+                                url('MaNouvellePolice.woff') format('woff'),
+                                url('MaNouvellePolice.ttf') format('truetype'),
+                                url('MaNouvellePolice.svg') format('svg');
+                        }
+                    </pre>
+                <li>Italique (font-style: italic), gras (font-weight: bold), souligné (text-decoration: underline), barré (text-decoration: line-through)    </li>
+                <li>Alignement =  text-align: right; left; justify, center </li>
+                <li>Flottant = float: left; right </li>
+                <li>Couleur du texte = color: maroon; ou color: #FFFFFF;</li>
+                <li>Couleur du fond = background-color: black; sur la balise body</li>
+            </ol>
+       <li>bordures et des ombres</li>
+            <ol> 
+                    <li>Bordure à un élément : propriété border. Il faut indiquer la largeur de la bordure, sa couleur et son type (trait continu, pointillés…).
+                    <pre>p
+                        {
+                            border-left: 2px solid black;
+                            border-right: 2px solid black;
+                        }
+                    </pre></li>
+                    <li> On peut arrondir les bordures avec border-radius : forme de l'arrondi pour chaque coin</li>
+                    <pre>p
+                        {
+                            border-radius: 10px 5px 10px 5px;
+                        }</pre>
+                    <li> On peut ajouter une ombre aux blocs de texte avec box-shadow. On doit indiquer le décalage vertical et horizontal de l'ombre, son niveau d'adoucissement et sa couleur.</li>
+                    <pre>p
+                        {
+                            box-shadow: 6px 6px 6px black;
+                        }</pre>
+                    <li> Le texte peut lui aussi avoir une ombre avec text-shadow</li>
+                    <pre>p
+                        {
+                            text-shadow: 2px 2px 4px black;
+                        }</pre>
+            </ol>
+        <li>apparences dynamiques</li>
+        <ol>
+            <li>Au survol a:hover, p:hover</li>
+            <li>Au clic :active et lors de la sélection :focus</li>
+            <li>Lorsque le lien a déjà été consulté :visited</li>
+
+        </ol>
     </ul>
 
 </body>

@@ -1,0 +1,22 @@
+/* Feuille de styles CSS */
+h1
+{
+    color:darkred;
+    font-size: 3em;
+}
+
+figure
+{
+ text-align: center;
+}
+
+ul
+{
+    border: 1px solid darkred;
+    box-shadow: 6px 6px 6px 2px grey;
+}
+
+a:hover
+{
+  font-weight: bold;
+}
