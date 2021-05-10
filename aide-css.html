@@ -96,9 +96,93 @@
             <li>Au survol a:hover, p:hover</li>
             <li>Au clic :active et lors de la sélection :focus</li>
             <li>Lorsque le lien a déjà été consulté :visited</li>
-
         </ol>
     </ul>
+
+<h1>Formater des blocs</h1>
+<ul>
+    <li>Dimension : width = largeur, height = hauteur. On peut réduire la taille ex : 50%, ou donner une taille 250px. Des tailles mini (min-width) ou max (max-height) </li>
+    <li>Les marges. Interieures (padding) et exterieures (margin). Une seule valeur = s'applique aux 4 côtés du bloc; sinon préciser margin-bottom / padding-left...
+    <pre>
+    p{
+    width: 350px; /* On a indiqué une largeur (obligatoire) */
+    margin: auto; /* On peut donc demander à ce que le bloc soit centré avec auto */
+    border: 1px solid black;
+    text-align: justify;
+    padding: 12px;
+    margin-bottom: 20px;}
+    </pre>
+    </li>
+    <li>Lorsque le texte ne tient pas dans le bloc défini, utiliser overflow, ce qui crée des barres de défilement
+<pre>
+    p {
+    width: 250px;
+    height: 110px;
+    text-align: justify;
+    border: 1px solid black;
+    overflow: auto; }
+</pre>
+    </li>
+    <li>Lorsque le mot est trop long (ex URL) on peut forcer la coupure avec word-wrap: break-word</li>
+    <li><a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/3298561-faites-votre-mise-en-page-avec-flexbox" target="_blank"> Tuto Flexbox sur OCR</a></li>
+<ul>
+    <li>Définir un conteneur avec plusieurs éléments (div)
+        <pre>
+            &lt; div id="conteneur"&gt;
+            &lt;div class="element 1"&gt;Element  &lt;/div&gt;
+            &lt;div class="element 2"&gt;Element &lt;/div&gt;
+            &lt;div class="element 3"&gt;Element &lt;/div&gt;
+            &lt;/div&gt;
+        </pre>
+    </li>
+    <li>Flex : les blocs se placent à côte
+        <pre>
+            #conteneur{
+    display: flex;}
+        </pre>
+    </li>
+    
+    <li>Donner une direction : display: flex; flex-direction: column;
+         <ul>
+         <li> row : organisés sur une ligne (par défaut)</li>
+         <li> column : organisés sur une colonne</li> 
+         <li> row-reverse : organisés sur une lignemais en ordre inversé </li>
+         <li> column-reverse : organisés sur une colonne, mais en ordre inversé.</li>
+        </ul>
+    </li>
+    <li>Retour à la ligne : display: flex; flex-wrap: wrap;
+        
+        <ul>
+            <li>nowrap : pas de retour à la ligne (par défaut)</li>
+            <li>wrap : les éléments vont à la ligne lorsqu'il n'y a plus la place ;</li>
+            <li>wrap-reverse : les éléments vont à la ligne, lorsqu'il n'y a plus la place, en sens inverse.</li>
+        </ul>
+    </li>
+    <li>Alignement sur axe principal à l'horizontal : display: flex; <strong> justify-content</strong></li>
+    <ul>
+        <li>flex-start : alignés au début (par défaut)</li>
+        <li>flex-end : alignés à la fin </li>
+        <li>center : alignés au centre</li>
+        <li>space-between : les éléments sont étirés sur tout l'axe (il y a de l'espace entre eux) </li>
+        <li>space-around : idem, les éléments sont étirés sur tout l'axe, mais ils laissent aussi de l'espace sur les extrémités.</li>
+    </ul>
+
+    <li>Alignement sur axe principal à la vertical : display: flex; flex-direction: column; justify-content: center</li>
+
+    <li>Alignement axe secondaire : display: flex;  justify-content: center; <strong>align-items: center</strong></li>
+    <ul>
+        <li>stretch : les éléments sont étirés sur tout l'axe (valeur par défaut)</li>
+        <li>flex-start : alignés au début </li>
+        <li>flex-end : alignés à la fin</li>
+        <li>center : alignés au centre ;</li>
+        <li>baseline : alignés sur la ligne de base (semblable à flex-start)</li>
+    </ul>
+    <li>Avec flex-wrap  , on peut autoriser les éléments à revenir à la ligne s'ils n'ont plus d'espace.</li>
+    <li>S'il y a plusieurs lignes, on peut indiquer comment les lignes doivent se répartir entre elles avec align-content</li>
+    <li>Chaque élément peut être réagencé en CSS avec order </li>
+    <LI>Avec la super-propriété flex  , on peut autoriser nos éléments à occuper plus ou moins d'espace restant.</LI>
+</ul>
+
 
 </body>
 </html>

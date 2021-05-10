@@ -8,11 +8,24 @@ text-shadow: 6px 6px 6px grey;
 
 figure
 {
-text-align:left;
+width: 100px;
+margin: left;
+border: 1px solid rgb(164, 163, 163);
+padding: 4px;
+padding-bottom: 1px;
+margin-bottom: 20px;
+box-shadow: 7px 7px 7px grey;
 }
 
 h2 
 {
 border: 1px solid grey;
+border-radius: 10px 10px 10px 10px;
+background-color: rgb(160, 152, 158);
+}
 
+p
+{
+text-decoration-line: underline;
+text-shadow: 2px 2px 5px grey;
 }
