@@ -6,43 +6,59 @@ body
     margin-left: 310px;
     margin-right: 310px;
     text-align: justify;
-    font-family: dayrom;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
     color: rgb(56, 55, 55);
        }
 
 /* Police */
 @font-face {
-    font-family: 'ballpark';
-    src: url('ballpark.eot') format('eot'),
+    font-family:'BallparkWeiner';
+    src: url('ballpark.eot') format('eot');
+    src: url('ballpark.eot?#iefix') format('embedded-opentype'),
         url('ballpark.woff') format('woff'),
         url('ballpark.ttf') format('truetype'),
         url('ballpark.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'dayrom';
-    src: url('dayrom.eot') format('eot'),
+    font-family:'dayrom';
+    src: url('dayrom.eot') format('eot');
+    src: url('dayrom.eot?#iefix') format('embedded-opentype'),
         url('dayrom.woff') format('woff'),
         url('dayrom.ttf') format('truetype'),
         url('dayrom.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
 #bloc_page
 {
     width: 900px;
-   
+    margin: auto;
 }
+
+section h1, footer h1, nav a
+{
+    font-family: Dayrom, serif;
+    font-weight: normal;
+   }
 
 header
 {
+    background: url(../img/separateur.png) repeat-x bottom;
     display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     
 }
 
 #titre_principal
 {
-
+    display: flex; 
+    flex-direction: column;
 }
 
 #logo
@@ -52,15 +68,30 @@ header
     font-style: italic;
     font-weight: bold;
     font-size: 1.2em;
-   
+    flex-direction: row;
+    align-items: baseline;
 }
 
-
-
-h1
+#logo img
 {
-    font-family: dayrom;
-    font-size: 1.2em;
+    width: 50px;
+    height: 60px;
+}
+
+header h1
+{
+    font-family: 'BallparkWeiner', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+}
+
+header h2
+{
+    font-family: Dayrom, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;   
 }
 
 p
@@ -69,110 +100,191 @@ p
     font-size: 0.8em;
 }
 
-nav
+nav ul
 {
-    font-size: 1em;
-    margin-left: 300px;
-    margin-top: 50px;
-    float:right;
-    
-    
-}
-nav ul li
-{
-    list-style: none;
-    text-align: center;
-    display: inline;
+    list-style-type: none;
+    display: flex;
 }
 
-
-#banniere_description
+nav li
 {
- 
- height: 40px;
- background-color: rgb(15, 15, 15);
-    margin-top: 160px;
-    color: white;
-       
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
 }
 
 #banniere_image
 {
+  margin-top: 15px;
   height: 200px;
-  border: 1px solid black;
-  border-radius: 10px 10px 10px 10px;
-  box-shadow: 7px 7px 20px black;
-  background-image: url(../img/sanfrancisco.jpg);
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px black;
+  background: url(../img/sanfrancisco.jpg) repeat-x;
+  position: relative;
+  margin-bottom: 25px;
 }
 
+#banniere_description
+{
+    position: absolute;
+    bottom: 0;
+    width: 99.5%;
+    height: 33px;
+    background-color: rgb(15, 15, 15);
+    border-radius: 0px 0px 5px 5px;
+    margin-top: 160px;
+    color: white;
+    padding-top: 15px;
+    padding-left: 4px;
+       
+}
 
 .bouton_rouge
 {
-    background-image: url(../img/fond_degraderouge.png);
-    width: 120px;
-    height: 30px;
-    border-radius: 10px 10px 10px 10px;
+    background: url(../img/fond_degraderouge.png) repeat-x;
+    position: absolute;
+    height: 25px;
+    right: 5px;
+    bottom: 5px;
+    border: 1px solid #760001;
+    border-radius: 5px;
     color: white;
-    float: right;
+    font-size: 1.2em;
+    padding: 3px 8px 0px 8px;
     text-decoration:none;
     text-align: center;
-        
+}
+
+.bouton_rouge img
+{
+    border: 0;
 }
 
 Section
 {
     display: flex;
+    margin-bottom: 20px;
 }    
+
+article, aside
+{
+    text-align: justify;
+}
 
 article
 {
-    width: 700%;
     margin-right: 20px;
+    flex: 3;
+}
+
+.ico_categorie
+{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+article p
+{
+    font-size: 0.8em;
 }
 
 
 aside
 {
-    width: 300%;
+    flex: 1.2;
+    position: relative;
     margin-top: 20px;
     padding: 10px;
-    background-color: grey;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 10px black;
+    background-color: #706b64;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
     color: white;
+    font-size: 0.9em;
+}
+
+#fleche_bulle
+{
+    position: absolute;
+    top: 100px;
+    left: -12px;
+}
+
+
+#photo_zozor
+{
+    text-align: center;
+}
+
+#photo_zozor img
+{
+    border: 1px solid #181818;
+}
+
+aside img
+{
+    margin-right: 5px;
 }
 
 footer
 {
     display: flex;
-    justify-content: space-around;
+    background:  url('../img/ico_top.png') no-repeat top center, url('../img/separateur.png') repeat-x top, url('../img/ombre.png') repeat-x top;
+    padding-top: 25px;
+}
+
+footer p, footer ul
+{
+    font-size: 0.8em;
+}
+
+footer h1
+{
+    font-size: 1.1em;
 }
 
 #tweet
 {
-    width: 500px;
+    width: 28%;
 }
 
 #photos
 {
-    width: 500px;
+    width: 35%;
+}
+
+#photos img
+{
+    border: 1px solid #181818;
+    margin-right: 2px;
+}
+
+#listes_amis
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
 }
 
 #amis
 {
-    width: 500px;
-    list-style-type: none;
-    }
-
-  /* LIENS */
-li a:link 
-{
-  color: rgb(194, 33, 140); 
-  text-decoration-line: none;
- 
+    width: 31%;
 }
 
-li a:hover 
+#amis ul
 {
-    text-decoration: underline;
+    list-style-image: url('../img/ico_liensexterne.png');
+    padding-left: 2px;
 }
+
