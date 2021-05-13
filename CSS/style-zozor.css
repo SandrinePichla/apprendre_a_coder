@@ -7,6 +7,7 @@ body
     margin-right: 310px;
     text-align: justify;
     font-family: dayrom;
+    color: rgb(56, 55, 55);
        }
 
 /* Police */
@@ -26,21 +27,35 @@ body
         url('dayrom.svg') format('svg');
 }
 
+
+#bloc_page
+{
+    width: 900px;
+   
+}
+
+header
+{
+    display: flex;
+    
+}
+
+#titre_principal
+{
+
+}
+
 #logo
 {
     display: flex;
     font-family: ballpark;
-    font-size: 1em;
-    
-}
-
-
-
-#header banniere_image:not()
-{
-    display: flex;
+    font-style: italic;
+    font-weight: bold;
     font-size: 1.2em;
+   
 }
+
+
 
 h1
 {
@@ -57,11 +72,28 @@ p
 nav
 {
     font-size: 1em;
-    list-style-type: none;
-    width: 25%;
-    margin-left: 600px;
-    margin-right: 50px ;
-     
+    margin-left: 300px;
+    margin-top: 50px;
+    float:right;
+    
+    
+}
+nav ul li
+{
+    list-style: none;
+    text-align: center;
+    display: inline;
+}
+
+
+#banniere_description
+{
+ 
+ height: 40px;
+ background-color: rgb(15, 15, 15);
+    margin-top: 160px;
+    color: white;
+       
 }
 
 #banniere_image
@@ -73,19 +105,33 @@ nav
   background-image: url(../img/sanfrancisco.jpg);
 }
 
-#centre
+
+.bouton_rouge
+{
+    background-image: url(../img/fond_degraderouge.png);
+    width: 120px;
+    height: 30px;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+    float: right;
+    text-decoration:none;
+    text-align: center;
+        
+}
+
+Section
 {
     display: flex;
 }    
 
-.article
+article
 {
     width: 700%;
     margin-right: 20px;
 }
 
 
-.aside
+aside
 {
     width: 300%;
     margin-top: 20px;
@@ -96,10 +142,10 @@ nav
     color: white;
 }
 
-#footer
+footer
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #tweet
@@ -115,7 +161,8 @@ nav
 #amis
 {
     width: 500px;
-}
+    list-style-type: none;
+    }
 
   /* LIENS */
 li a:link 

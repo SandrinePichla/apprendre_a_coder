@@ -4,6 +4,12 @@ body {
 background-color:white;
 margin: 10px 10px 30px 30px;
 }
+/*  HEADER  */
+header
+{
+    font-size: 3em;
+    text-shadow: 7px 7px 20px black;
+}
 
 /* TITRE */
 h1 {
