@@ -128,3 +128,68 @@ text-align:left;
 margin-left:0px;
 margin-right:0px;
 }    
+
+
+nav
+{
+display: flex;
+}
+
+nav ul
+{
+list-style-type: none;
+width: auto;
+display: flex;
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a:link
+{
+    color: rgb(31, 30, 34);
+}
+
+nav a:visited
+{
+    color: rgb(146, 146, 147);
+}
+
+nav a:hover
+{
+    color: rgb(56, 6, 100);
+}
+
+.site-externe
+{
+    display: flex;
+    }
+    
+.site-externe ul
+    {
+    list-style-type: none;
+    width: auto;
+    display: flex;
+    }
+    
+.site-externe li
+    {
+        margin-right: 15px;
+    }
+    
+.site-externe a:link
+    {
+        color: rgb(31, 30, 34);
+    }
+    
+.site-externe a:visited
+    {
+        color: rgb(146, 146, 147);
+    }
+    
+.site-externe a:hover
+    {
+        color: rgb(56, 6, 100);
+    }

@@ -113,7 +113,7 @@ nav li
 
 nav a
 {
-    font-size: 1.3em;
+    font-size: 1em;
     color: #181818;
     padding-bottom: 3px;
     text-decoration: none;
@@ -124,6 +124,38 @@ nav a:hover
     color: #760001;
     border-bottom: 3px solid #760001;
 }
+
+.site-externe
+{
+    display: flex;
+    }
+    
+.site-externe ul
+    {
+    list-style-type: none;
+    width: auto;
+    display: flex;
+    }
+    
+.site-externe li
+    {
+        margin-right: 15px;
+    }
+    
+.site-externe a:link
+    {
+        color: rgb(31, 30, 34);
+    }
+    
+.site-externe a:visited
+    {
+        color: rgb(146, 146, 147);
+    }
+    
+.site-externe a:hover
+    {
+        color: rgb(56, 6, 100);
+    }
 
 #banniere_image
 {

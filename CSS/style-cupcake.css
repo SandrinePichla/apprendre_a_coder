@@ -20,3 +20,72 @@ a:hover
 {
   font-weight: bold;
 }
+
+
+nav
+{
+display: flex;
+}
+
+nav ul
+{
+list-style-type: none;
+width: auto;
+display: flex;
+border: none; 
+box-shadow: none;
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a:link
+{
+    color: rgb(31, 30, 34);
+}
+
+nav a:visited
+{
+    color: rgb(146, 146, 147);
+}
+
+nav a:hover
+{
+    color: rgb(56, 6, 100);
+}
+
+.site-externe
+{
+    display: flex;
+    }
+    
+.site-externe ul
+    {
+    list-style-type: none;
+    width: auto;
+    display: flex;
+    border: none;
+    box-shadow: none;
+    }
+    
+.site-externe li
+    {
+        margin-right: 15px;
+    }
+    
+.site-externe a:link
+    {
+        color: rgb(31, 30, 34);
+    }
+    
+.site-externe a:visited
+    {
+        color: rgb(146, 146, 147);
+    }
+    
+.site-externe a:hover
+    {
+        color: rgb(56, 6, 100);
+    }

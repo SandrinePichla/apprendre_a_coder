@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-formulaire.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="../apprendre-a-coder/index.html" target="_blank">Accueil</a></li>
+            <li><a href="../apprendre-a-coder/aide-html.html" target="_blank">HTML</a></li>
+            <li><a href="../apprendre-a-coder/aide-css.html" target="_blank">CSS</a></li>
+            <li><a href="../apprendre-a-coder/aide-visual-studio-code.html" target="_blank">Visual Studio Code</a></li>
+            <li><a href="../apprendre-a-coder/formulaire.html" target="_blank">Formulaire</a></li>
+            <li><a href="../apprendre-a-coder/cv_sandrine_pichla.html" target="_blank">CV</a></li>
+            <li><a href="../apprendre-a-coder/cupcake.html" target="_blank">Cupcake</a></li>
+            <li><a href="../apprendre-a-coder/blog-trotter.html" target="_blank">Blog-trotter</a></li>
+            <li><a href="../apprendre-a-coder/zozor.html" target="_blank">Zozor</a></li>   
+            <li><a href="../apprendre-a-coder/furets.html" target="_blank">Furet</a></li>
+        </ul>
+    </nav>
+
+    <div class="site-externe">    
+        <ul>
+            <li><a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3" target="_blank">Open Class Rooms</li></a>
+            <li><a href="https://grafikart.fr/formations/html" target="_blank">Grafikart HTML</li></a>
+            <li><a href="https://grafikart.fr/formations/css" target="_blank">Grafikart CSS</li></a>
+        </ul>
+    </div>
+    
+    <form method="POST" action="traitement.php">
+        
+        <fieldset>
+            <legend>Vos coordonnées</legend>
+         
+                <p>
+                    <label for="nom">Votre nom</label>
+                    <input type="text" name="nom" id="nom" placeholder="nom" autofocus>
+                </p>
+                <p>
+                    <label for="prénom">Votre prénom</label>
+                    <input type="text" name="prénom" id="prénom" placeholder="prénom">
+                 </p>   
+                 <p>
+                    <label for="email">Votre email</label>
+                    <input type="email" required />
+                 </p>  
+                 <p>
+                    <label for="tel">Votre numéro de téléphone</label>
+                    <input type="tel">
+                 </p> 
+                 <p>  
+                    <label for="url">Votre url</label>
+                    <input type="url">
+                </p> 
+    </fieldset>
+
+    <fieldset>
+        <legend>Vous</legend>
+        <p>
+            <label for="number">Votre tranche d'âge</label>
+            <input type="number" min="10" max="100" step="10">
+        </p>
+        <p>
+            <label for="color">Votre couleur préférée</label>
+            <input type="color">
+        </p>
+        <p>
+            <label for="date">Votre date de départ en vacances souhaitée</label>
+            <input type="date">
+        </p>
+        <p>
+            <label for="pays">Dans quel pays voulez-vous aller en vacances</label>
+            <select name="pays" id="pays">
+                <option value="France">France</option>
+                <option value="Angleterre">Angleterre</option>
+                <option value="Allemangne">Allemangne</option>
+                <option value="Espagne">Espagne</option>
+                <option value="Irlande" selected>Irlande</option>
+            </select>
+        </p>
+
+        <p>
+            Votre statut
+            <input type="radio" name="CSP" value="Etudiant" id="Etudiant">
+            <label for="Etudiant">Etudiant</label>
+    
+            <input type="radio" name="CSP" value="Salarié" id="Salarié">
+            <label for="Salarié">Etudiant</label>
+    
+            <input type="radio" name="CSP" value="Chef d'entreprise" id="Chef d'entreprise">
+            <label for="Chef d'entreprise">Chef d'entreprise</label>
+    
+            <input type="radio" name="CSP" value="Retraité" id="Retraité">
+            <label for="Retraité">Retraité</label>            
+        </p>
+        <p>
+            <label for="range">Votre envie de partir en vacances</label>
+            <input type="range" min="0" max="100" step="1">
+         </p>
+
+    </fieldset>
+
+<p>
+    <textarea rows="5" cols="100"> Votre message</textarea>
+</p>
+<fieldset>
+    <legend>Envoi de votre demande</legend>
+    <label for="checkbox">recevoir la newsletter</label>
+    <input type="checkbox" checked>
+
+    <label for="password">password</label>
+    <input type="password">
+
+    <input type="submit" value="Valider">
+</fieldset>
+
+    </form>
+</body>
+</html>
