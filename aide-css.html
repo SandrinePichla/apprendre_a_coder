@@ -28,6 +28,9 @@
             <li><a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3" target="_blank">Open Class Rooms</li></a>
             <li><a href="https://grafikart.fr/formations/html" target="_blank">Grafikart HTML</li></a>
             <li><a href="https://grafikart.fr/formations/css" target="_blank">Grafikart CSS</li></a>
+            <li><a href="https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free" target="_blank">ICONES</li></a>
+            <li><a href="https://mdbootstrap.com/docs/b4/jquery/css/colors/" target="_blank">COULEURS</li></a>
+            <li><a href="https://fonts.google.com/" target="_blank">FONTS</li></a>
         </ul>
     </div>
     
@@ -73,6 +76,8 @@
     <h1>Formater le texte</h1>
     <ul>
         <li>La taille : font-size (16px, 1.3em, ou 110 %)</li>
+        <li>La hauteur de la ligne :  line-height= 1.4; </li>
+        <li>Espace netre le lettres : letter-spacing=0.2</li>
         <li>La police : font-family (arial, verdana, sans-serif)</li>
             <ol>
                 <li><a href="https://www.fontsquirrel.com/" target="_blank">pour en télécharger et pour l'inserer :</a> Le fichier de police (ici MaNouvellePolice.eot) doit ici être situé dans le même dossier que le fichier CSS :</li>
@@ -85,12 +90,14 @@
                                 url('MaNouvellePolice.svg') format('svg');
                         }
                     </pre>
-                <li>Italique (font-style: italic), gras (font-weight: bold), souligné (text-decoration: underline), barré (text-decoration: line-through)</li>
-                <li>Alignement =  text-align: right; left; justify, center </li>
+                <li>Italique (font-style: italic), gras (font-weight: bold), souligné (text-decoration: underline et text-decoration-style/ line / color  ) , barré (text-decoration: line-through)</li>
+                <li>Alignement =  text-align: right; left; justify, center. Seulement pour les élements en display inline ou inline-block. Pas pour les blocks</li>
                 <li>Flottant = float: left; right </li>
                 <li>Couleur du texte = color: maroon; ou color: #FFFFFF;</li>
                 <li>Couleur du fond = background-color: black; sur la balise body</li>
-            </ol>
+                <li>Couper les mots trop longs overflow-wrap, hyphens=manual et écrire '& shy;' à l'endroit où il faudrait couper, (ou word-break)</li>
+            </ol><br>
+
        <li>bordures et des ombres</li>
             <ol> 
                     <li>Bordure à un élément : propriété border. Il faut indiquer la largeur de la bordure, sa couleur et son type (trait continu, pointillés…).</li>
@@ -114,6 +121,24 @@
                 <li>Lorsque le lien a déjà été consulté :visited</li>
             </ol>
     </ul>
+<h1>unités de mesures</h1>
+    <ul>
+        <li>px</li>
+        <li>  % (largeur : % du bloc parent. Pour la hauteur, ça ne fonctionne pas)</li>
+        <li> vh (1% de la hauteur de l'espace visible)</li>
+        <li> vw (1% de la largeur de l'espace visible); vmin et vmax(hueteur ou largeur facteur limitant)</li>
+        <li> em (proportionnel à la taille de la police du bloc)</li>
+        <li> rem (proportionnel à la pocice définie dans la racine = body ou html, toutes les hauterus seront identiques dans tous les blocs)</li>
+
+    </ul>
+<h1>Imprimer</h1>
+    <ul>
+        <li>Faire lien vers un fichier style.css et un line vers un fichier print.css</li>
+        <li>'link rel="stylesheet" href="style.css" media="screen"'' et 'link rel="stylesheet" href="print.css" media="print"'</li>
+        <li>On réfélchi en mm cm...; </li>
+    </ul>   
+
+<h1>Créer un bouton</h1>
 
 <h1>Formater des blocs</h1>
     <ul>
