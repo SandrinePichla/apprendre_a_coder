@@ -1,0 +1,79 @@
+/*  en-tête  */
+
+@font-face {
+    font-family:'dayrom';
+    src: url('dayrom.eot') format('eot');
+    src: url('dayrom.eot?#iefix') format('embedded-opentype'),
+        url('dayrom.woff') format('woff'),
+        url('dayrom.ttf') format('truetype'),
+        url('dayrom.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* MENU NAVIGATION */
+
+
+nav
+{
+display: flex;
+}
+
+nav ul
+{
+list-style-type: none;
+width: auto;
+display: flex;
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a:link
+{
+    color: rgb(31, 30, 34);
+}
+
+nav a:visited
+{
+    color: rgb(146, 146, 147);
+}
+
+nav a:hover
+{
+    color: rgb(56, 6, 100);
+}
+
+.site-externe
+{
+    display: flex;
+    }
+    
+.site-externe ul
+    {
+    list-style-type: none;
+    width: auto;
+    display: flex;
+    }
+    
+.site-externe li
+    {
+        margin-right: 15px;
+    }
+    
+.site-externe a:link
+    {
+        color: rgb(31, 30, 34);
+    }
+    
+.site-externe a:visited
+    {
+        color: rgb(146, 146, 147);
+    }
+    
+.site-externe a:hover
+    {
+        color: rgb(56, 6, 100);
+    }
