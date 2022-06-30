@@ -1,3 +1,24 @@
+/* STYLE GENERAL */
+html, body {margin:0; padding:0}
+body {
+background-color:white;
+margin: 10px 10px 30px 30px;
+}
+
+
+#lien-externe
+{
+
+background:rgb(248, 14, 244);
+color: rgb(189, 226, 25);
+padding: 0.5em 0.5em;
+text-align: center;
+font-size: 0.8em;
+line-height: 0.8em;
+letter-spacing: 0.2em;
+
+}
+
 /*  en-tête  */
 
 @font-face {
@@ -12,7 +33,6 @@
 }
 
 /* MENU NAVIGATION */
-
 
 nav
 {
@@ -77,3 +97,51 @@ nav a:hover
     {
         color: rgb(56, 6, 100);
     }
+
+
+    
+/*  HEADER  */
+header
+{
+    font-size: 3em;
+    text-shadow: 7px 7px 20px black;
+}
+
+/* TITRE */
+h1 {
+font-family:arial, sans-serif;
+font-size: 1.3em;
+color:rgb(9, 3, 46);
+background-color:transparent;
+text-align:left;
+}
+
+h2 {
+font-family:arial, sans-serif;
+font-size: 1.2em;
+color:rgb(206, 36, 141);
+background-color:transparent;
+text-align:left;
+}
+
+/* PARAGRAPHES */
+p {
+font-family:arial, sans-serif;
+font-size:1.1em;
+color:black;
+background-color:transparent;
+text-align:left;
+margin-left:0px;
+margin-right:0px;
+}
+
+/* LISTES */
+li {
+font-family:arial, sans-serif;
+font-size:1em;
+color:black;
+background-color:transparent;
+text-align:left;
+margin-left:0px;
+margin-right:0px;
+}

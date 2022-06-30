@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,9 @@
     <meta name="PHP" content="apprendre le PHP">
     <title>PHP</title>
 </head>
+
 <body>
+
     <nav>
         <ul>
             <li><a href="../apprendre-a-coder/index.html" target="_blank">Accueil</a></li>
@@ -35,26 +37,45 @@
             <li><a href="https://fonts.google.com/" target="_blank">FONTS</li></a>
         </ul>
     </div> 
-</body>
 
-<div id="banniere">
-    <div class="tittle"><h2>Où inserer le code php</h2>
-      <ul>
-        <li>Ouvrir visual studio code</li>
-        <li>Installer WAMP</li>
-        <li>Créer un fichier php : index.php dans sites\learn\stm\app\scripts\php</li>
-        <li>Démarrer par &lt;?php et finir par ?&gt;  Exemple : <br>&lt;?php <br> echo "Exécution de PHP"; <br>?&gt;<br></li><br>
-        <li>Ouvrir chrome et taper http://localhost/tests/ où tests est le nom du dossier où se trouve le fichier php</li>
-        <li>Sur la page web, on pourra lire Exécution de PHP </li>
-    </ul>
 
-        
+<div id="corps">
+    <div id="lien-externe">
+        <h1><a href="https://www.php.net/manual/fr/" target="blank">MANUEL PHP en français</a></a></h1>
+    </div>
+    
+    <h1>A quoi sert le PHP : à génèrer du code HTML, c'est un langage de programmation</h1>
+    
+    <div class="tittle">
+        <h2>Installer php</h2>
+            <ul>
+                <li>Ouvrir visual studio code</li>
+                <li>Installer WAMP</li>
+                <li>Créer un fichier php : "index.php" dans sites\learn\stm\app\scripts\php</li>
+                <li>Démarrer wamp dans le dossier où se trouve le fichier php : configurer MAMP / préférences/ Web Server/ selectionner le dossier parent</li>
+                <li>Une balise PHP a la forme <strong>&lt;?php</strong> /* Code PHP */ <strong>?&gt;</strong> </li>
+                <li>Configurer PHP pour afficher les erreurs. Modifier le fichier appelé php.ini, avec error_reporting E_ALL et display_errors On. En cas d'erreur, elle s'affichera sur la page web </li>  
+            </ul>
 
-    </div> 
+        <h2>Débuter</h2>
+        <ul>
+                <li>Exemple avec une instruction echo : (permet d'insérer du texte dans la page web)</li>
+                    <ul>
+                        <li><br>&lt;?php <br> echo "Exécution de PHP"; <br>?&gt;<br></li>
+                        <li>Ouvrir chrome et taper http://localhost/php/ où php est le nom du dossier où se trouve le fichier php</li>
+                        <li>Sur la page web, on pourra lire Exécution de PHP </li><br>
+                        
+                    </ul> 
+                <li>On peut mettre des balises PHP n'importe où dans du code HTML, même à l'interieur d'une balise HTML, exemple : &lt; meta <strong> &lt; ?php /* Code PHP */ ? &gt;</strong> charset="utf-8" /&gt;</li>
+                <li>Lorsqu'on regarde le code source, on ne voit pas qu'il y a du code PHP </li>
+                <li>Grande importance de noter des commentaires, si <strong>une ligne</strong>  // et texte, si <strong>plusieurs lignes</strong>  /*  texte et  */ </li>
+        </ul>  
+
+        </div> 
 
 </div>
 
 
 
-
+</body>
 </html>
