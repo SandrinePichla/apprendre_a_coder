@@ -65,8 +65,38 @@
         $number = 10 % 5; // $number prend la valeur 0 car la division tombe juste
         echo '<br>  $number = 10 % 5 =' .$number .' (le sigle % = Modulo = reste de la division)'; 
         $number = 10 % 3; // $number prend la valeur 1 car il reste 1
-        echo '<br>  $number = 10 % 3 =' .$number .' (le sigle % = Modulo = reste de la division)'; 
+        echo '<br>  $number = 10 % 3 =' .$number .' (le sigle % = Modulo = reste de la division)<br><br>'; 
         ?>
+
+        <?php
+        echo "Utiliser la fonction if et si faux, else : <br>";
+        $isEnabled = true; // La condition d'accès
+
+        if ($isEnabled == true) {
+            echo "Vous êtes autorisé(e) à accéder au site ✅ <br><br>";
+        }
+        else {
+            echo "Accès refusé ❌ <br>";
+        }
+        ?>
+
+
+        <?php
+        echo "Utiliser la fonction if, si \"non\"  elseif, et \"si ni oui ni non\" else : <br>";
+
+        $isAllowedToEnter = "Non"; // SI on a l'autorisation d'entrer
+
+        if ($isAllowedToEnter == "Oui") {echo "Vous êtes autorisé(e) à accéder au site✅";
+            // instructions à exécuter quand on est autorisé à entrer
+        } // SINON SI on n'a pas l'autorisation d'entrer
+        elseif ($isAllowedToEnter == "Non") {echo "Accès refusé ❌ <br> ";
+            // instructions à exécuter quand on n'est pas autorisé à entrer
+        } // SINON (la variable ne contient ni Oui ni Non, on ne peut pas agir)
+        else {
+            echo "Euh, je ne comprends pas ton choix ...<br<><br>";
+        }
+        ?>
+        
     
     </body>
 </html>

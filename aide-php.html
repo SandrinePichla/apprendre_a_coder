@@ -73,23 +73,31 @@
 
         <h2>Les variables</h2>
         <ul>
-            <li>Info le temps de générer la page web = éphémère</li>
-            <li>Consituée d'un nom et d'une valeur : ex : Nom = âge / valeur = 50</li>
-            <li>Ecrire les variables selon la convention camelCase, toujours démarrer par $</li>
-            <li> <a href="../apprendre-a-coder/img/variables.jpeg" target="_blank">Différent types de valeur</a>  
+            <li>Info le temps de générer la page web = éphémère</li> <br>
+            <li>Consituée d'un nom et d'une valeur : ex : Nom = âge / valeur = 50</li><br>
+            <li>Ecrire les variables selon la convention camelCase, toujours démarrer par $</li><br>
+            <li> <a href="../apprendre-a-coder/img/variables.jpeg" target="_blank">Différent types de valeur</a></li><br>
                 <ul>
                     <li>String = chaine de caractères (=texte) Ex  &lt;?php $fullname = "Toto"; $email = 'toto@exemple.com'; ?&gt; faire attention aux " " et ' '. <br> Utiliser \ pour bloquer l'action des "" et ' ' lorsque ce n'est pas du code. Ex $variable = "Mon \"nom\" est Toto"; $variable = 'Je m\'appelle Toto';</li>
                     <li>Int = Nombre entier Ex &lt;?php $userAge = 50; ?&gt; </li>
                     <li>Float = Nombres décimaux Ex &lt;?php $price = 57.3; ?&gt; (attention . pas ,)</li>
                     <li>Bool = valeur booléenne (vrai ou faux) Ex &lt;?php $isAuthor = true; $isAdministrator = false; ?&gt;</li>
-                    <li>NULL = ne contient rien Ex &lt;?php &lt;?php $noValue = NULL; ?&gt;</li>
+                    <li>NULL = ne contient rien Ex &lt;?php &lt;?php $noValue = NULL; ?&gt;</li><br>
                 </ul>
-            </li>
-            <li><strong> Concatener : Ecrire du texte autour d'une variable : </strong></li>
+           
+            <li><strong> Concatener : Ecrire du texte autour d'une variable : </strong></li><br>
                     <ul>
                         <li>On peut écrire les variables à l'intérieur de guillemets doubles &lt;?php $fullname = "Toto"; echo "Bonjour $fullname et bienvenue sur le site !"; ?&gt; </li>
                         <li>Il <strong>faut</strong> écrire les variables à l'intérieur de guillemets simples <strong> &lt;?php $fullname = 'Toto'; echo 'Bonjour ' . $fullname . ' et bienvenue sur le site !'; ?&gt; </strong></li>
-                    </ul>
+                    </ul><br>
+
+            <li><strong>Conditions = c'est ce qui va réellement vous permettre de créer une application dynamique</strong></li>
+            <UL>
+                <li>if</li>
+                <li>else et elseif</li>
+                <li>switch</li>
+                <li>case</li>
+            </UL>        
 
 
 
