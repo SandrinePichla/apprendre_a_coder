@@ -95,9 +95,34 @@
             <UL>
                 <li>if</li>
                 <li>else et elseif</li>
-                <li>switch</li>
+                <li>Exemple : $isAllowedToEnter = "Non"; 
+                    if ($isAllowedToEnter == "Oui") {echo "Vous êtes autorisé";} 
+                    elseif ($isAllowedToEnter == "Non") {echo "Accès refusé ";} 
+                    else {echo "erreur de choix ";}</li>
+                    <li>si on veut que la condition soit fausse, on écrit :   if (!$isAllowedToEnter). Ca revient à écrire if ($isAllowedToEnter == false)</li>
+                <li>switch (il ne peut tester que l'égalité)</li>
                 <li>case</li>
-            </UL>        
+            </UL>
+            <li>Faire des calculs</li> 
+            <ul>
+                <li>On peut écrire :  $number = 2 + 4; echo ' $number = 2 + 4 = '  . $number ; le résultat s'affiche</li>
+                <li>Des calculs simples :  $number = (1 + 2) * 2;</li>
+                <li>des fonctions : $number = 10; $result = ($number + 5) * $number;</li>
+                <li>Des modulo (reste d'une division) $number = 10 % 3;</li>
+            </ul>
+            <li>Symboles et mots clés à connaitre</li>
+                <img src="../apprendre-a-coder/img/symboles-petit.jpg" alt="">
+               <img src="../apprendre-a-coder/img/motsclés-petit.jpg" alt=""> Or : altGr + 6  <br><br>
+
+            <li>Exemple : if (($isEnabled && $isOwner) || $isAdmin) {echo 'Accès validé';} else {echo 'Accès refusé';}</li>   
+            <li>les ternaires : des conditions condensées. Ils servent à faire deux choses sur une seule ligne :</li>
+                <ul>
+                    <li>Tester la valeur d'une variable dans une condition</li>
+                    <li>Affecter une valeur à une variable selon que la condition est vraie ou non</li>
+                </ul>  
+                
+                
+
 
 
 
