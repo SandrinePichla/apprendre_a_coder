@@ -26,7 +26,7 @@
 #banniere
 {
    padding-top: 30px;
-  
+  width: 80%;
    margin: auto;
     background-color: rgb(18, 18, 46);
     width: auto; 
@@ -45,8 +45,10 @@
     color:rgb(140, 125, 90);
     font-family: Dayrom, serif;
     font-size: 0.8em;
+
     
 }
+
 
 .photo
 {
@@ -72,9 +74,10 @@
 .coordonnees 
 {
    padding-left: 50px; 
+   padding-right: 50px;
     display: flex;
     color: white;
-    font-family: calibri, serif;
+    font-family: Dayrom, calibri, serif;
     font-size: 0.8em;
     
 }

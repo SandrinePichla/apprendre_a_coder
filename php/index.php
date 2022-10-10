@@ -294,7 +294,15 @@
     $isAdult = ($userAge >= 18); 
     ?>
 
-    
+<?php
+$note = 15;
+    if ($note >= 10) {
+        echo 'Bravo vous avez la moyenne';
+    } else {
+        echo 'Dommage vous n\'avez pas la moyenne';
+    }
+    ?>
+
 
    
         
