@@ -43,10 +43,11 @@
 #banniere h2
 {
     color:rgb(140, 125, 90);
+    font-size: 1em;
     font-family: Dayrom, serif;
-    font-size: 0.8em;
+    text-align: center;
+    margin-left: 120px;
 
-    
 }
 
 
@@ -59,6 +60,7 @@
 .tittle
 {
      text-align: center;
+    
 }
 
 
@@ -138,18 +140,28 @@
 
 .experience
 {
+    text-align: justify;
     padding-left: 20px;
     padding-top: 30px;
-    width: 50%;
+    width: 60%;
     margin-left: 20px;
 }
 
+.interet
+{
+    text-align: center;
+    flex-direction: row;
+    color:rgb(140, 125, 90);
+    font-size: 2em;
+}
+
+
 .menu_bas
 {
-    padding-top: 30px;
-   width: 80%;
-    margin: auto;
-     background-color: rgb(18, 18, 46);
+   
+    padding-top: 20px;
+    width: 80%;
+    background-color: rgb(18, 18, 46);
      width: auto; 
      
  }
