@@ -3,9 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+    <title>Javascript</title>
 </head>
+
 <body>
+    
+    <nav>
+        <ul>
+            <li><a href="../apprendre-a-coder/index.html" target="_blank">Accueil</a></li>
+            <li><a href="../apprendre-a-coder/aide-html.html" target="_blank">HTML</a></li>
+            <li><a href="../apprendre-a-coder/aide-css.html" target="_blank">CSS</a></li>
+            <li><a href="../apprendre-a-coder/aide-javascript.html" target="_blank">Javascript</a></li>
+            <li><a href="../apprendre-a-coder/aide-visual-studio-code.html" target="_blank">Visual Studio Code</a></li>
+            <li><a href="../apprendre-a-coder/formulaire.html" target="_blank">Formulaire</a></li>
+            <li><a href="../apprendre-a-coder/cv_sandrine_pichla.html" target="_blank">CV</a></li>
+            <li><a href="../apprendre-a-coder/cupcake.html" target="_blank">Cupcake</a></li>
+            <li><a href="../apprendre-a-coder/blog-trotter.html" target="_blank">Blog-trotter</a></li>
+            <li><a href="../apprendre-a-coder/zozor.html" target="_blank">Zozor</a></li>   
+            <li><a href="../apprendre-a-coder/furets.html" target="_blank">Furet</a></li>
+            <li><a href="../apprendre-a-coder/aide-php.html" target="_blank">PHP</a></li>
+            <li><a href="../apprendre-a-coder/sumot.html" target="_blank">Sumot</a></li>
+        </ul>
+    </nav>
+
+    <div class="site-externe">    
+        <ul>
+            <li><a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3" target="_blank">Open Class Rooms</li></a>
+            <li><a href="https://grafikart.fr/formations/html" target="_blank">Grafikart HTML</li></a>
+            <li><a href="https://grafikart.fr/formations/css" target="_blank">Grafikart CSS</li></a>
+            <li><a href="https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free" target="_blank">ICONES</li></a>
+            <li><a href="https://mdbootstrap.com/docs/b4/jquery/css/colors/" target="_blank">COULEURS</li></a>
+            <li><a href="https://fonts.google.com/" target="_blank">FONTS</li></a>
+        </ul>
+    </div>
+
+    <h1><a href="../apprendre-a-coder/img/programmer-javascript.png" target="_blank">Fiche récap : apprenez à coder en Javascript</a></h1>
+
+        <h2><a href="https://codepen.io/pen" target="_blank">CodePen</a></h2>
+        Permet de vérifier le résultat du code, c'est un éditeur de code en ligne.
+   
+
+    <h1><a href="../apprendre-a-coder/img/variable-java.jpg" target="_blank">Qu'est-ce qu'une variable</a></h1>
+    En informatique, une variable est un conteneur qui stocke la donnée temporairement au sein de votre code. Cela vous permet d'enregistrer des données. <br>
+        
+        <h2>Valeur, nom, type</h2>
+             Une variable c'est un ensemble de 3 élements : une valeur (Sandrine), un nom (monPrenom), un type (du texte) <br>
+       
+        <h2>Let ou Const</h2>
+
+            <li><Strong>Const :</Strong> Une variable peut être fixe, par exemple mon prénom, une fois déclaré, mon prénom ne pourra plus changer. Si on essaie, JavaScript refusera d'exécuter l'instruction et affichera une erreur. <br>
+            On écrira :  const monPrenom = "Sandrine"</li> 
+            <li> <strong>Let :</strong> Elle peut être amenée à changer par exemple mon âge. On écrira :  let monAge = 42</li>
+            <li><strong>Var : </strong> L'instruction var peut également être utilisée pour déclarer une variable, mais elle est considérée comme obsolète.</li>
+            <li><strong>L'instruction console.log() : </strong> Pour vérifier le contenu d'une variable, il est possible d'utiliser l'instruction console.log(), avec entre les parenthèses, le nom de la variable.</li>
+            <li><strong>Il n'est pas necessaire de requalifier la variable quand elle a déjà été définie par let ou const.</strong></li>
+            <li><Strong>Importance de nommer correctement les variables : il faut donner du sens pour qu'un autre développeur puisse comprendre</Strong></li>
+              
+        <h2><a href="../apprendre-a-coder/img/erreur-const.jpg" target="_blank">Exemple de code et vérification avec la console.  <strong>Erreur sur la variable const</strong> </a></h2>
+
+        <h2><a href="../apprendre-a-coder/img/type-variables.jpg" target="_blank">  Types de variables : number, string et boolean</a></h2>
+            
+            <li>number = nombre (âge, prix...)</li>
+            <li>String = chaine de caracères (prénom, texte...)</li>
+            <li>Boolean = true/false (seulement 2 possibilités)</li>
+
+        <h2>Modifier les variables</h2>
+           
+            <li><a href="../apprendre-a-coder/img/operations-nombres-theorie.jpg" target="_blank"><strong>Modifier la variable Number</strong></a> Ex d'une variable qui compte le nombre d'adhérents (200), on veut rajouter 100. On commence par : <br>
+                <a href="../apprendre-a-coder/img/operations-nombres-pratique.jpg" target="_blank"> let V = 200 <br> V = V + 100 <br> ou V += 100 </a></li>
+            <li><a href="../apprendre-a-coder/img/operations-caracteres-theorie.jpg" target="_blank"><strong>Modifier la variable String</strong></a> On veut concatener des variables texte. On commence par : <br>
+                <a href="../apprendre-a-coder/img/operations-caracteres-pratique.jpg" target="_blank"> let V1 = "Bienvenue, " <br> let V2 = "Sandrine" <br> let message = V1 + V2 </a><br>
+                <a href="../apprendre-a-coder/img/operations-caracteres-addition.jpg" target="_blank">On peut aussi utiliser le signe + pour rajouter du texte</a></li>
+            <li><a href="../apprendre-a-coder/img/operations-boolean-theorie.jpg" target="_blank"><strong>Modifier la variable Boolean (vrai/faux)</strong></a>
+            <li><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Expressions_and_Operators#op%C3%A9rateurs_daffectation" target="_blank"><strong>Pour aller plus loin : Autres opérateurs (de comparaison, arithmétique, de conditions...)</strong></a><br>
+
+            <li><strong>Les caractères sont entre " " : let variablestring = "Sandrine". Pour ne pas faire d'erreur sur les nombres (ne jamais les entourer de " "), on peut noter : let variableNumber = 150 ou let variableNumber = Number("150"). Pour les Booléans, pas de " " non plus : let variableBoolean = true</strong></li>
+                
+        <h2><a href="../apprendre-a-coder/img/exercice.jpg" target="_blank">Exercice récap</a></h2>
+
+
+
+
     
 </body>
 </html>
