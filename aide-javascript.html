@@ -18,6 +18,7 @@
             <li><a href="../apprendre-a-coder/aide-visual-studio-code.html" target="_blank">Visual Studio Code</a></li>
             <li><a href="../apprendre-a-coder/formulaire.html" target="_blank">Formulaire</a></li>
             <li><a href="../apprendre-a-coder/cv_sandrine_pichla.html" target="_blank">CV</a></li>
+            <li><a href="../apprendre-a-coder/wild-code-school.html" target="_blank" >Wild Code School</a></li>
             <li><a href="../apprendre-a-coder/cupcake.html" target="_blank">Cupcake</a></li>
             <li><a href="../apprendre-a-coder/blog-trotter.html" target="_blank">Blog-trotter</a></li>
             <li><a href="../apprendre-a-coder/zozor.html" target="_blank">Zozor</a></li>   
@@ -50,7 +51,7 @@
         <h2>Valeur, nom, type</h2>
              Une variable c'est un ensemble de 3 élements : une valeur (Sandrine), un nom (monPrenom), un type (du texte) <br>
        
-        <h2>Let ou Const</h2>
+        <h2>let ou const (ne jamais mettre de mascules)</h2>
 
             <li><Strong>Const :</Strong> Une variable peut être fixe, par exemple mon prénom, une fois déclaré, mon prénom ne pourra plus changer. Si on essaie, JavaScript refusera d'exécuter l'instruction et affichera une erreur. <br>
             On écrira :  const monPrenom = "Sandrine"</li> 
@@ -81,6 +82,40 @@
             <li><strong>Les caractères sont entre " " : let variablestring = "Sandrine". Pour ne pas faire d'erreur sur les nombres (ne jamais les entourer de " "), on peut noter : let variableNumber = 150 ou let variableNumber = Number("150"). Pour les Booléans, pas de " " non plus : let variableBoolean = true</strong></li>
                 
         <h2><a href="../apprendre-a-coder/img/exercice.jpg" target="_blank">Exercice récap</a></h2>
+
+    <h1>Les objets JavaScript</h1>
+    Un objet est un conteneur. Il est composé de propriétés qui ont chacune une valeur. Ainsi, le type de donnée Object offre la possibilité de stocker plusieurs valeurs en une seule fois, plutôt que de devoir stocker séparément nos valeurs dans plusieurs variables différentes. 
+       
+        <h2>Comment déclarer un objet : </h2>
+        Utiliser les accolades  { }, les propriétés d'un objet ont un nom et une valeur qui sont assignées avec deux points, elles sont séparées par des virgules.Ex avec une personne : <br>
+            let monPersonnage = { <br>
+                nom: "Wayne", <br>
+                prenom: "Bruce", <br>
+                age: 35, <br>
+                couleurPreferee: "noir", <br>
+                hobbies: "sortir la nuit" <br>
+                }
+
+        <h2> <a href="../apprendre-a-coder/img/objet-JS.jpg" target="_blank"> Pour rajouter une propriété : on utilise le . : </a></h2>
+        monPersonnage.vehiculePrefere = "Batmobile"
+
+        <h2><a href="../apprendre-a-coder/img/propriete-objet-JS.jpg" target="_blank"> Acceder à une propriété d'un objet pour lui attribuer des variables : </a></h2>
+        on utilise le . entre l'objet et la propriété. On peut aussi lui attribuer un nom plus court pour simplifier la recherche
+        
+        <h2><a href="../apprendre-a-coder/img/exercice-propriete-objet-JS.jpg" target="_blank">  Résumé : voir exercice</a></h2>
+
+    <h1>Regroupez des données grâce aux tableaux</h1>
+        <h2>Pour déclarer un tableau, on utilise les [ ] et les , entre les variables et pas d'espaces</h2>
+
+                <li>Dans la console, la commande length permet de connaitre le nombre de données dans le tableau. console.log(variable.length)</li>
+                <li>Ajouter un élement dans le tableau avec push : variable.push("X") </li>
+                <li>Supprimer la dernière variable avec pop : variable.pop()</li>
+                <li>Les copies par valeur
+                    <ul>Variables simples (number, string, booleans), création d'une nouvelle variable avec une copie de la valeur</ul>
+                    <ul>Variables complexes : tableaux, création, création d'une nouvelle variable qui va pointer vers l'ancienne variable</ul>
+                </li>
+ 
+    
 
 
 
