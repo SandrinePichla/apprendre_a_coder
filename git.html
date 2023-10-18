@@ -52,12 +52,42 @@
             <li>git config --global user.name "prénom et nom" et git config --global user.email [email].</li>
             <li>Pour vérifier : git config --global --list</li>
     
-        <h2>Gestion des dépots</h2>
+        <h2>Gestion des dépots dans un dossier local</h2>
             <li>git init : Crée un dépôt local vide dans le dossier</li>
             <li>Termes : repository = dépots; enregistrement = commit</li>
             <li>git add nomdufichier : ajouter les modifications à la zone d'index</li>
             <li>git status : vérifier que les fichiers sont prets à être enregistrés</li>
             <li>git reset nomdufichier : enlever le fichier de la zone d'index</li>
+            <li>git commit -m"nom des modifs" : enregistrer les modifications dans le dépôt local</li>
+            <li>git diff : voir les modifications qui ont été faites</li>
+            <li>git log : Historique des commits</li>
+
+        <h2>Les branches</h2>
+        <li>git switch nomdelabrance : changement de branche</li>
+        <li>git switch -c nomdelanouvellebranche : création d'une nouvelle branche</li>
+        <li>git restore : annule les modifications dans le dossier local, et avec --staged permet de désindexer </li>
+       
+        <li>git merge : rappatrie les modifications faites sur une branche sur une autre. Ex modif sur branche1, on se met sur master on merge et on a les modifs de banche1. Garde l'historique sur les branches.
+            <ul>je suis dans ma branche1 -> git switch master</ul>
+            <ul>je suis dans mon master je merge ma banche1 : git merge branche1</ul>
+            <ul>régler les conflits danns le fichier code.txt et enregistrer ce fichier</ul>
+            <ul>git status on voit que le fichier n'est pas indexé </ul>
+            <ul>git add code.txt</ul>
+            <ul>git commit -> éditeur de texte qui s'ouvre et qui dit que les conflits sont réglés et que l'on a fait un merge de la branche1 sur le master </ul>
+        </li>
+
+        <li>git rebase : permet de mettre les modifs de 2 branches sur une même branche. Historique sur 1 seule branche.
+            <ul>se mettre sur la branche1 à "rebase"</ul>
+            <ul>git rebase master : on a des conflits -> fichier code.txt. Modifier le fichier pour régler les conflits et enregistrer</ul>
+            <ul>git add code.txt quand conflits réglés</ul>
+            <ul>git rebase --continue : éditer à nouveau le fichier code.txt pour régler les conflits</ul>
+            <ul>git add code.txt</ul>
+            <ul>git rebase --continue</ul>
+            <ul>git checkout master</ul>
+            <ul>git merge branche1</ul>
+
+
+        </li>
 
 
         
