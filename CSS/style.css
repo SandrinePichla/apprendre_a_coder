@@ -170,18 +170,51 @@ nav li
 
 nav a:link
 {
-    color: rgb(31, 30, 34);
+    color: rgb(84, 84, 244);
 }
 
 nav a:visited
 {
-    color: rgb(146, 146, 147);
+    color: rgb(126, 126, 246);
 }
 
 nav a:hover
 {
-    color: rgb(56, 6, 100);
+    color:rgb(8, 8, 243);
 }
+
+.sites-tests
+{
+    display: flex;
+    }
+    
+.sites-tests ul
+    {
+    list-style-type: none;
+    width: auto;
+    display: flex;
+    }
+    
+.sites-tests li
+    {
+        margin-right: 15px;
+    }
+    
+.sites-tests a:link
+    {
+        color: rgb(222, 67, 243);
+    }
+    
+.sites-tests a:visited
+    {
+        color: rgb(225, 107, 240);
+    }
+    
+.sites-tests a:hover
+    {
+        color:  rgb(221, 29, 246);
+    }
+
 
 .site-externe
 {
@@ -202,17 +235,17 @@ nav a:hover
     
 .site-externe a:link
     {
-        color: rgb(31, 30, 34);
+        color:  rgb(241, 39, 113);
     }
     
 .site-externe a:visited
     {
-        color: rgb(146, 146, 147);
+        color:  rgb(239, 87, 143);
     }
     
 .site-externe a:hover
     {
-        color: rgb(56, 6, 100);
+        color: rgb(247, 16, 100);
     }
 
 

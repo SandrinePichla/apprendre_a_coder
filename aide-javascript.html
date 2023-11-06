@@ -12,30 +12,38 @@
     <nav> 
         <ul>
             <li><a href="../apprendre-a-coder/index.html" target="_blank">Accueil</a></li>
-            <li><a href="../apprendre-a-coder/aide-html.html" target="_blank">HTML</a></li>
-            <li><a href="../apprendre-a-coder/aide-css.html" target="_blank">CSS</a></li>
-            <li><a href="../apprendre-a-coder/aide-visual-studio-code.html" target="_blank">Visual Studio Code</a></li>
             <li><a href="../apprendre-a-coder/git.html" target="_blank">GIT</a></li>
+            <li><a href="../apprendre-a-coder/aide-visual-studio-code.html" target="_blank">Visual Studio Code</a></li>
+            <li><a href="../apprendre-a-coder/aide-html.html" target="_blank">HTML</a></li>
+            <li><a href="../apprendre-a-coder/aide-css.html" target="_blank">CSS</a></li>  
+            <li><a href="../apprendre-a-coder/aide-javascript.html" target="_blank">JAVASCRIPT</a></li>        
+            <li><a href="../apprendre-a-coder/aide-php.html" target="_blank">PHP</a></li>
             <li><a href="../apprendre-a-coder/formulaire.html" target="_blank">Formulaire</a></li>
+
+        </ul>
+    </nav>
+
+    <div class="sites-tests">
+        <ul>
             <li><a href="../apprendre-a-coder/cv_sandrine_pichla.html" target="_blank">CV</a></li>
             <li><a href="../apprendre-a-coder/wild-code-school.html" target="_blank" >Wild Code School</a></li>
+            <li><a href="../apprendre-a-coder/tests-js.html" target="_blank" >Tests JAVASCRIPT</a></li>
             <li><a href="../apprendre-a-coder/cupcake.html" target="_blank">Cupcake</a></li>
             <li><a href="../apprendre-a-coder/blog-trotter.html" target="_blank">Blog-trotter</a></li>
             <li><a href="../apprendre-a-coder/zozor.html" target="_blank">Zozor</a></li>   
             <li><a href="../apprendre-a-coder/furets.html" target="_blank">Furet</a></li>
-            <li><a href="../apprendre-a-coder/aide-php.html" target="_blank">PHP</a></li>
             <li><a href="../apprendre-a-coder/sumot.html" target="_blank">Sumot</a></li>
         </ul>
-    </nav>
+    </div>
 
     <div class="site-externe">    
         <ul>
-            <li><a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3" target="_blank">Open Class Rooms</li></a>
-            <li><a href="https://grafikart.fr/formations/html" target="_blank">Grafikart HTML</li></a>
+            <li><a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3" target="_blank">Open Class Rooms</a></li>
+            <li><a href="https://grafikart.fr/formations/html" target="_blank">Grafikart HTML</a></li>
             <li><a href="https://grafikart.fr/formations/css" target="_blank">Grafikart CSS</li></a>
-            <li><a href="https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free" target="_blank">ICONES</li></a>
-            <li><a href="https://mdbootstrap.com/docs/b4/jquery/css/colors/" target="_blank">COULEURS</li></a>
-            <li><a href="https://fonts.google.com/" target="_blank">FONTS</li></a>
+            <li><a href="https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free" target="_blank">ICONES</a></li>
+            <li><a href="https://mdbootstrap.com/docs/b4/jquery/css/colors/" target="_blank">COULEURS</a></li>
+            <li><a href="https://fonts.google.com/" target="_blank">FONTS</a></li>
         </ul>
     </div>
 
@@ -53,9 +61,9 @@
        
         <h2>let ou const (ne jamais mettre de mascules)</h2>
 
-            <li><Strong>Const :</Strong> Une variable peut être fixe, par exemple mon prénom, une fois déclaré, mon prénom ne pourra plus changer. Si on essaie, JavaScript refusera d'exécuter l'instruction et affichera une erreur. <br>
+            <li><Strong>Const :</Strong> Une variable peut être fixe, par exemple mon prénom, une fois déclaré, <strong> mon prénom ne pourra plus changer</strong>. Si on essaie, JavaScript refusera d'exécuter l'instruction et affichera une erreur. <br>
             On écrira :  const monPrenom = "Sandrine"</li> 
-            <li> <strong>Let :</strong> Elle peut être amenée à changer par exemple mon âge. On écrira :  let monAge = 42</li>
+            <li> <strong>Let :</strong> <strong> Elle peut changer </strong>: par exemple mon âge. On écrira :  let monAge = 42</li>
             <li><strong>Var : </strong> L'instruction var peut également être utilisée pour déclarer une variable, mais elle est considérée comme obsolète.</li>
             <li><strong>L'instruction console.log() : </strong> Pour vérifier le contenu d'une variable, il est possible d'utiliser l'instruction console.log(), avec entre les parenthèses, le nom de la variable.</li>
             <li><strong>Il n'est pas necessaire de requalifier la variable quand elle a déjà été définie par let ou const.</strong></li>
@@ -111,9 +119,51 @@
                 <li>Ajouter un élement dans le tableau avec push : variable.push("X") </li>
                 <li>Supprimer la dernière variable avec pop : variable.pop()</li>
                 <li>Les copies par valeur
-                    <ul>Variables simples (number, string, booleans), création d'une nouvelle variable avec une copie de la valeur</ul>
-                    <ul>Variables complexes : tableaux, création, création d'une nouvelle variable qui va pointer vers l'ancienne variable</ul>
+                    <ul> <a href="../apprendre-a-coder/img/copie_variables_par_copie.png" target="_blank"> Copie de Variables simples (number, string, booleans) par copie de la valeur</a>, création d'une nouvelle variable avec une copie de la valeur</ul>
+                    <ul> <a href="../apprendre-a-coder/img/copie_variables_par_reference.png" target="_blank"> Copies de Variables complexes par référence </a> : tableaux, objets, création d'une nouvelle variable qui va pointer vers l'ancienne variable (donc qui se modifiera également), il faut faire une copie du tableau à l'aide de [... nomDeLaValeur] c'est le spread operator  </ul>
                 </li>
+
+    <h1>Pour exécuter du code JS : </h1>
+    <ul>
+        <li>Créer un fichier html qui servira de console (ouvrir la console sur chrome : plus d'outils / outils développement / console) </li>
+        <li>Créer un fichier .js qui contiendra le code JS </li>
+        <li>lier les 2 : inserer le lien vers la page JS dans la page HTML : &lt script src="../js/script.js" &gt   &lt / script &gt  </li>
+    </ul>
+
+    <h1>Opérateurs de comparaison</h1>
+    <ul>
+        <li>Inférieur ou égale à, se note  &lt=  </li>
+        <li>égal à, se note  ===  .ATENTION, ne pas confondre avec = qui fixe une valeur : 
+            <ul>a = 42 signifie que l'on met la valeur 42 dans la variable a ; </ul>
+            <ul>a === 42 signifie que l'on compare la valeur a et la valeur 42, pour savoir si ce sont les mêmes ou pas. </ul>
+        </li>
+        <li> Différent de, se note  !==</li>
+    </ul>
+
+    <h1>Condition switch/case pour gérer plusieurs réponses</h1>
+    <ul>
+        <li>Lorsqu'il y a plusieur if/else imbriqués, le plus simple est d'utiliser switch/case</li>
+        <li> <a href="../apprendre-a-coder/img/switch-case.png" target="_blank">Voir exemple de test sur les codes pays </a></li>
+        <li>break permet d'arrêter la boucle dès que la solution est trouvée</li>
+        <li><a href="../apprendre-a-coder/img/if-else-données-tableau.png" target="_blank">utiliser if/else avec des variables dans un tableau</a></li>
+    </ul>
+
+    <h1>La boucle FOR (=pour)</h1>
+    <ul>
+        <li>permet de répéter du code lorsque l'on sait d'avance combien de fois il faudra le répéter. </li>
+        <li>Par exemple, si nous voulons demander exactement trois fois à l'utilisateur d'entrer un mot.</li>
+        <li>for (let compteur = 0; compteur &lt 3; compteur = compteur + 1) {
+            console.log(compteur)}
+        </li>
+    </ul>
+    <h1>La boucle WHILE</h1>
+    <ul>
+        <li>permet de répéter du code autant de fois qu'il le faut pour qu'une condition ne soit plus vraie.</li>
+        <li>Par exemple, si nous voulons redemander un mot à l'utilisateur jusqu'à ce que ce mot soit correct.</li>
+
+    </ul>
+
+
  
     
 
