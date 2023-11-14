@@ -88,6 +88,7 @@ if (motUtilisateur1 === listeMots [0]) {
             }
 **/
 
+/** Corrigé code exercice liste de mots
 const listeMots = ['Cachalot' , 'Pétunia' , 'Serviette']
 let score = 0
 
@@ -107,4 +108,30 @@ if (motUtilisateur === listeMots [2]) {
     score ++
  }
  console.log(score);
-           
+ **/
+
+/** code FOR
+for (let compteur = 0; compteur < 3; compteur++) {
+ console.log(compteur)   
+}
+**/
+
+/** code while 
+let compteurs = 0
+while (compteurs < 3) {
+    compteurs++
+}
+**/     
+
+/** 
+let mot = prompt("Ecrivez le mot OK")
+while (mot!=="OK") {
+mot = prompt("Ecrivez le mot OK")
+}
+console.log("Vous avez écrit OK!")
+**/
+
+const listeMots = ["Cachalot" , "Pétunia" , "Serviette"]
+for (let listeMots, )
+console.log(listeMots [2])
+
