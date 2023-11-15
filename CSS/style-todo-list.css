@@ -1,7 +1,65 @@
-h1 {
-    color: red;
+* {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
 }
 
-.checked {
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+header {
+    background-color: greenyellow; 
+    text-align: center;
+    padding:30px 0px;
+}
+
+header h1 {
+    color: white;
+    width : 100%;
+    margin:0;
+    margin-bottom: 10px;
+}
+
+header #input-new-task {
+    background-color: rgb(235, 235, 238);
+    border : 0;
+    width:40%;
+    height: 30px;
+    font-size: 16px;
+}
+
+header button {
+    background-color: rgb(235, 235, 238);
+    border : 0;
+    height: 30px;
+    font-size: 16px; 
+    margin-left: 0px;
+}
+
+
+
+ul#list-task li {
+background-color: white;
+display: flex;
+align-items: center;
+height: 30px;
+cursor: pointer;
+}
+
+/** caractéristiques une ligne sur 2 : even=paires, odd=impaires **/
+ul#list-task li:nth-child(even){
+    background-color: rgb(234, 233, 233);
+}
+
+ul#list-task li:hover {
+background-color: #ddd;
+}
+
+/** lorsque la tache est réalisée, elle est barrée **/
+ul#list-task li.checked {
     text-decoration : line-through;
+    background-color: #424242;
+    color: azure;
 }
