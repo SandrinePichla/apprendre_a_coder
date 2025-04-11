@@ -40,7 +40,7 @@
         <ul>
             <li><a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3" target="_blank">Open Class Rooms</a></li>
             <li><a href="https://grafikart.fr/formations/html" target="_blank">Grafikart HTML</a></li>
-            <li><a href="https://grafikart.fr/formations/css" target="_blank">Grafikart CSS</li></a>
+            <li><a href="https://grafikart.fr/formations/css" target="_blank">Grafikart CSS</a></li>
             <li><a href="https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free" target="_blank">ICONES</a></li>
             <li><a href="https://mdbootstrap.com/docs/b4/jquery/css/colors/" target="_blank">COULEURS</a></li>
             <li><a href="https://fonts.google.com/" target="_blank">FONTS</a></li>
@@ -60,6 +60,7 @@
              Une variable c'est un ensemble de 3 élements : une valeur (Sandrine), un nom (monPrenom), un type (du texte) <br>
        
         <h2>let ou const (ne jamais mettre de mascules)</h2>
+        <ul>
 
             <li><Strong>Const :</Strong> Une variable peut être fixe, par exemple mon prénom, une fois déclaré, <strong> mon prénom ne pourra plus changer</strong>. Si on essaie, JavaScript refusera d'exécuter l'instruction et affichera une erreur. <br>
             On écrira :  const monPrenom = "Sandrine"</li> 
@@ -68,16 +69,20 @@
             <li><strong>L'instruction console.log() : </strong> Pour vérifier le contenu d'une variable, il est possible d'utiliser l'instruction console.log(), avec entre les parenthèses, le nom de la variable.</li>
             <li><strong>Il n'est pas necessaire de requalifier la variable quand elle a déjà été définie par let ou const.</strong></li>
             <li><Strong>Importance de nommer correctement les variables : il faut donner du sens pour qu'un autre développeur puisse comprendre</Strong></li>
+        </ul>
               
         <h2><a href="../apprendre-a-coder/img/erreur-const.jpg" target="_blank">Exemple de code et vérification avec la console.  <strong>Erreur sur la variable const</strong> </a></h2>
 
         <h2><a href="../apprendre-a-coder/img/type-variables.jpg" target="_blank">  Types de variables : number, string et boolean</a></h2>
-            
+        <ul>
             <li>number = nombre (âge, prix...)</li>
             <li>String = chaine de caracères (prénom, texte...)</li>
             <li>Boolean = true/false (seulement 2 possibilités)</li>
+        </ul>
 
         <h2>Modifier les variables</h2>
+
+    <ul>
            
             <li><a href="../apprendre-a-coder/img/operations-nombres-theorie.jpg" target="_blank"><strong>Modifier la variable Number</strong></a> Ex d'une variable qui compte le nombre d'adhérents (200), on veut rajouter 100. On commence par : <br>
                 <a href="../apprendre-a-coder/img/operations-nombres-pratique.jpg" target="_blank"> let V = 200 <br> V = V + 100 <br> ou V += 100 </a></li>
@@ -88,6 +93,8 @@
             <li><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Expressions_and_Operators#op%C3%A9rateurs_daffectation" target="_blank"><strong>Pour aller plus loin : Autres opérateurs (de comparaison, arithmétique, de conditions...)</strong></a><br>
 
             <li><strong>Les caractères sont entre " " : let variablestring = "Sandrine". Pour ne pas faire d'erreur sur les nombres (ne jamais les entourer de " "), on peut noter : let variableNumber = 150 ou let variableNumber = Number("150"). Pour les Booléans, pas de " " non plus : let variableBoolean = true</strong></li>
+
+        </ul>
                 
         <h2><a href="../apprendre-a-coder/img/exercice.jpg" target="_blank">Exercice récap</a></h2>
 
@@ -115,28 +122,34 @@
     <h1>Regroupez des données grâce aux tableaux</h1>
         <h2>Pour déclarer un tableau, on utilise les [ ] et les , entre les variables et pas d'espaces</h2>
 
+    <ul>
                 <li>Dans la console, la commande length permet de connaitre le nombre de données dans le tableau. console.log(variable.length)</li>
                 <li>Ajouter un élement dans le tableau avec push : variable.push("X") </li>
                 <li>Supprimer la dernière variable avec pop : variable.pop()</li>
-                <li>Les copies par valeur
-                    <ul> <a href="../apprendre-a-coder/img/copie_variables_par_copie.png" target="_blank"> Copie de Variables simples (number, string, booleans) par copie de la valeur</a>, création d'une nouvelle variable avec une copie de la valeur</ul>
-                    <ul> <a href="../apprendre-a-coder/img/copie_variables_par_reference.png" target="_blank"> Copies de Variables complexes par référence </a> : tableaux, objets, création d'une nouvelle variable qui va pointer vers l'ancienne variable (donc qui se modifiera également), il faut faire une copie du tableau à l'aide de [... nomDeLaValeur] c'est le spread operator  </ul>
-                </li>
+                <li>Les copies par valeur</li>
+                    <ul> 
+                        <li> <a href="../apprendre-a-coder/img/copie_variables_par_copie.png" target="_blank"> Copie de Variables simples (number, string, booleans) par copie de la valeur</a>, création d'une nouvelle variable avec une copie de la valeur</li>
+                        <li><a href="../apprendre-a-coder/img/copie_variables_par_reference.png" target="_blank"> Copies de Variables complexes par référence </a> : tableaux, objets, création d'une nouvelle variable qui va pointer vers l'ancienne variable (donc qui se modifiera également), il faut faire une copie du tableau à l'aide de [... nomDeLaValeur] c'est le spread operator</li>
+                    </ul>
+                
+    </ul>
 
     <h1>Pour exécuter du code JS : </h1>
     <ul>
         <li>Créer un fichier html qui servira de console (ouvrir la console sur chrome : plus d'outils / outils développement / console) </li>
         <li>Créer un fichier .js qui contiendra le code JS </li>
-        <li>lier les 2 : inserer le lien vers la page JS dans la page HTML : &lt script src="../js/script.js" &gt   &lt / script &gt  </li>
+        <li>lier les 2 : inserer le lien vers la page JS dans la page HTML : &lt script src="../js/script.js" &gt   &lt / script &gt</li>
     </ul>
 
     <h1>Opérateurs de comparaison</h1>
     <ul>
-        <li>Inférieur ou égale à, se note  &lt=  </li>
-        <li>égal à, se note  ===  .ATENTION, ne pas confondre avec = qui fixe une valeur : 
-            <ul>a = 42 signifie que l'on met la valeur 42 dans la variable a ; </ul>
-            <ul>a === 42 signifie que l'on compare la valeur a et la valeur 42, pour savoir si ce sont les mêmes ou pas. </ul>
-        </li>
+        <li>Inférieur ou égale à, se note  &lt=</li>
+        <li>égal à, se note  ===  .ATENTION, ne pas confondre avec = qui fixe une valeur : </li>
+            <ul> 
+                <li>a = 42 signifie que l'on met la valeur 42 dans la variable a ; </li>
+                <li>a === 42 signifie que l'on compare la valeur a et la valeur 42, pour savoir si ce sont les mêmes ou pas.</li>
+            </ul>
+        
         <li> Différent de, se note  !==</li>
     </ul>
 
@@ -150,15 +163,13 @@
         
     </ul>
 
-    <h1><a href="../apprendre-a-coder/img/for.png" target="_blank">La boucle FOR (=pour)</a></h1>
+<h1><a href="../apprendre-a-coder/img/for.png" target="_blank">La boucle FOR (=pour)</a></h1>
     <ul>
         <li>permet de répéter du code lorsque l'on sait d'avance combien de fois il faudra le répéter. </li>
         <li>Par exemple, si nous voulons demander exactement trois fois à l'utilisateur d'entrer un mot.</li>
-        <li>for (let compteur = 0; compteur &lt 3; compteur++) {
-            console.log(compteur)}
-        </li>
+        <li>for (let compteur = 0; compteur &lt 3; compteur++) {console.log(compteur)}</li>
     </ul>
-    <h1><a href="../apprendre-a-coder/img/while.png" target="_blank">La boucle WHILE (=tant que)</a></h1>
+<h1><a href="../apprendre-a-coder/img/while.png" target="_blank">La boucle WHILE (=tant que)</a></h1>
     <ul>
         <li>permet de répéter du code autant de fois qu'il le faut pour qu'une condition ne soit plus vraie.</li>
         <li><a href="../apprendre-a-coder/img/nombre-boucle-inconnu.png" target="_blank">Par exemple, si nous voulons redemander un mot à l'utilisateur jusqu'à ce que ce mot soit correct.</a></li>
@@ -176,33 +187,45 @@
 </ul>
 
 <h1>Les fonctions</h1>
-<ul>
-    <li><a href="../apprendre-a-coder/img/fonction-somme.png" target="_blank">Comment écrire une fonction : Exemple de la fonction somme </a></li>
-    <li>coder proprement : les bonnes pratiques</li>
     <ul>
+        <li><a href="../apprendre-a-coder/img/fonction-somme.png" target="_blank">Comment écrire une fonction : Exemple de la fonction somme </a></li>
+        <li>coder proprement : les bonnes pratiques</li>
         <li>Attribuer une seule tâche par une fonction</li>
         <li>Ecrire des fonctions courtes (moins de 30 lignes)</li>
         <li>Nommer clairement les fonctions, utiliser des verbes :afficherResultat, calculerResultat, reinitialiserResultat ... </li>
         <li>Nommer clairement les paramètres. Insérer un commentaire si ambigu</li>
+        <li><a href="../apprendre-a-coder/img/ordre-fichiers.js.png" target="_blank">Organiser le code en plusieurs fichiers .js à insérer dans le fichier html. Attention à l'ordre : mettre le fichier config.js avant le fichier script.js, car le code sera utiliser par le fichier script pour qu'il ait accès aux variables</a></li>
+        <li><a href="../apprendre-a-coder/img/function.png" target="_blank"> utiliser des fonctions pour simplifier le script</a></li>
     </ul>
-    <li><a href="../apprendre-a-coder/img/ordre-fichiers.js.png" target="_blank">Organiser le code en plusieurs fichiers .js à insérer dans le fichier html. Attention à l'ordre : mettre le fichier config.js avant le fichier script.js, car le code sera utiliser par le fichier script pour qu'il ait accès aux variables</a></li>
-    <li><a href="../apprendre-a-coder/img/function.png" target="_blank"> utiliser des fonctions pour simplifier le script</a></li>
-</ul>
 
 
 <h1>Récuperer un élement d'une page web</h1>
-<li><a href="../apprendre-a-coder/img/defer.png" target="_blank">Utilisez defer pour différer l’exécution du script</a></li>
-<li><a href="../apprendre-a-coder/img/getElement_querySelector.png" target="_blank">Utilisez différentes syntaxes pour récupérer un élément : getElementById, querySelector, querySelectorAll.</a></li>
+
+    <ul>
+        <li><a href="../apprendre-a-coder/img/defer.png" target="_blank">Utilisez defer pour différer l’exécution du script</a></li>
+        <li><a href="../apprendre-a-coder/img/getElement_querySelector.png" target="_blank">Utilisez différentes syntaxes pour récupérer un élément : getElementById, querySelector, querySelectorAll.</a></li>
+    </ul>
 
 
 <h1>Modifiez un élément du DOM</h1>
-    <li>setAttribute : méthode la plus générique, qui permet de spécifier n’importe quel attribut ;</li>
-    <li> classList : propriété spécifique qui permet de modifier des classes. </li>
-    <div><a href="../apprendre-a-coder/img/setAttribute.png" target="_blank">Exemple</a></div>
+    <ul>
+        <li>setAttribute : méthode la plus générique, qui permet de spécifier n’importe quel attribut ; <strong>1.Déclarer l'élement </strong>: baliseImage = document.getElementById("premiereImage"); <strong>2.puis modifier un attribut </strong>:  baliseImage.setAttribute("alt", "Ceci est une image de test modifiée"); <strong>2.Bis raccourcis</strong> : baliseImage.alt="Ceci est une image de test modifiée"</li>
+        <li> classList : propriété spécifique qui permet de modifier des classes. </li>
+        <li><a href="../apprendre-a-coder/img/setAttribute.png" target="_blank">Exemple</a></li>
+    </ul>
+
+<h1>Créer un nouvel élement sur une page web</h1>
+<ul>
+    <li>Créez une nouvelle balise grâce à createElement : <strong>let nouvelElement = document.createElement("div");</strong></li>
+    <li>Insérez la balise dans la page <strong>1.Récupérer un élément parent existant </strong> : et parentElement = document.getElementById("conteneur"); <strong>2.Ajouter le nouvel élément au parent </strong> : parentElement.appendChild(nouvelElement);</li>
+    <li>Insertion de plusieurs nouvelles balises <a href="../apprendre-a-coder/img/ajouter_html.png" target="_blank">Exemple</a></li>
+    <li>Utilisez l’interpolation pour générer du HTML : Lentourer la chaîne de caractères avec des backticks : ` quand nous voulons insérer une variable, il suffit de l’entourer avec${}. <a href="../apprendre-a-coder/img/Interpolation.png" target="_blank"> Exemple</a></li>
+
+</ul>
  
     
 
-
+ 
 
 
     
