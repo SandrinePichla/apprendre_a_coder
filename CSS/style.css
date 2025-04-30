@@ -49,6 +49,14 @@ background-color:transparent;
 text-align:left;
 }
 
+h3 {
+    font-family:arial, sans-serif;
+    font-size: 1em;
+    color:rgb(9, 3, 46);
+    background-color:transparent;
+    text-align:left;
+    }
+
 /* PARAGRAPHES */
 p {
 font-family:arial, sans-serif;
