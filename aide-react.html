@@ -14,15 +14,17 @@
             <li><a href="../apprendre-a-coder/index.html" target="_blank">Accueil</a></li>
             <li><a href="../apprendre-a-coder/git.html" target="_blank">GIT</a></li>
             <li><a href="../apprendre-a-coder/aide-visual-studio-code.html" target="_blank">Visual Studio Code</a></li>
-            <li><a href="../apprendre-a-coder/outils.html" target="_blank">Outils</a></li>
             <li><a href="../apprendre-a-coder/aide-html.html" target="_blank">HTML</a></li>
             <li><a href="../apprendre-a-coder/aide-css.html" target="_blank">CSS</a></li>  
-            <li><a href="../apprendre-a-coder/aide-javascript.html" target="_blank">JAVASCRIPT</a></li>
-            <li><a href="../apprendre-a-coder/page_web_dynamique.html" target="_blank">Créez des pages web dynamiques avec JavaScript</a></li>
-            <li><a href="../apprendre-a-coder/aide-react.html" target="_blank">REACT</a></li>                   
+            <li><a href="../apprendre-a-coder/aide-javascript.html" target="_blank">JAVASCRIPT</a></li>        
             <li><a href="../apprendre-a-coder/aide-php.html" target="_blank">PHP</a></li>
             <li><a href="../apprendre-a-coder/formulaire.html" target="_blank">Formulaire</a></li>
-             <li><a href="../apprendre-a-coder/aide-api.html" target="_blank">Les API</a></li>
+            <li><a href="../apprendre-a-coder/outils.html" target="_blank">Outils</a></li>            
+            <li><a href="../apprendre-a-coder/page_web_dynamique.html" target="_blank">Créez des pages web dynamiques avec JavaScript</a></li>
+            <li><a href="../apprendre-a-coder/aide-react.html" target="_blank">REACT</a></li>
+             <li><a href="../apprendre-a-coder/accessibilite.html" target="_blank">Accessibilié et référencement</a></li>                   
+            <li><a href="../apprendre-a-coder/aide-api.html" target="_blank">Les API</a></li>
+            <li><a href="../apprendre-a-coder/aide-application-express.html" target="_blank">Créez une application Express</a></li>        
         </ul>
     </nav>
 
@@ -49,8 +51,61 @@
         </ul>
     </div>
 
-    <h1><a href="https://grafikart.fr/formations/react" target="blank">APPRENDRE REACT</a></h1>
-    <h2>Installation</h2> 
+
+    <h1><a href="https://grafikart.fr/formations/react" target="blank">APPRENDRE REACT AVEC GRAFIKART</a></h1>
+        <h2>Installation</h2> 
+            <ul>
+                <li>Dans le terminal taper : npm create vite@latest ./   => installation dans le dossier, effeace tout le dossier</li>
+                <li>vider yes</li>
+                <li>choisir le nom de package</li>
+                <li>framework => react et JS</li>
+                <li>npm install</li>
+                <li>npm run dev</li>
+                <li>serveur sur localhost 5173</li>
+                <li>supprimer asset, .css </li>
+                <li>dans app.jsx => effacer tout le code entre {} et mettre return "hello"</li>
+                <li>dans main.jsx supprimer import...css </li>
+                <li>plus d'erreur dans la console, et affichage de hello</li>
+                <li>installer react dev tools dans chrome => l'inspecteur a maintenant "components" et "profiler" pour react</li>       
+            </ul>
+        <h2>Mise en route de react lors de chaque ouverture et création du projet : </h2>
+            <h3>regarder les commandes dans le fichier package.json : </h3>
+                <ul>
+                    <li>Pour lancer le serveur de développement Etre dans le projet et taper dans le terminal <strong>npm run dev</strong></li>
+                    <li>possibilité de telecharger des librairies de npm => canvas-confetti pour ça :</li>
+                        <ul>
+                            <li>taper dans un nouveau terminal (faire +)</li>
+                            <li>npm install --save canvas-confetti</li>
+                            <li>dans main.js taper <strong>import confetti from "canvas-confetti"</strong> comme écrit dans le terminal</li>
+                            <li>pour lancer la fonction écrire la fonction confetti()</li>                    
+                        </ul>
+                    <li>Construire le projet : taper dans le terminal <strong>npm run build => génère un dossier "dist" qui va contenir le fichier html qui contient le chemin vers du js compilé et un dossier asset qui contien le js bundlé. Il a bundlé tous les fichiers js en 1 seul = fusionné</strong></li>
+                    <li>Pour voir le fichier compilé, on tape la commande <strong>npm run previous</strong> nouveau port http localhost 4173</li>
+                </ul>
+            <h2>  <a href="https://grafikart.fr/tutoriels/javascript-vite-1351" target="_blank">  Pour revoir l'aide de Graphikart sur VITE, comment builder, comment rajouter des plugins, si on a du backend et qu'on veut integrer VITE  </a></h2>
+
+        <h1><a href="https://grafikart.fr/formations/react/continue#autoplay" target="_blank">LA SYNTHAXE JSX</a></h1>
+            <h2>Balises sémantiques dans le fichier xxx.jsx</h2>
+                <ul>
+                    <li>les élements écrits dans les balises dans le fichier .sjx forment un <a href="./img/noeud-react.png" target="_blank"> noeud react</a> </li>
+                    <li>1 seul élément à la racine,par exemple une div, puis mettre les autres à l'interieur</li>
+                    <li>par Ex : balise div, puis dedans h1, et dedans p... </li>
+                    <li>ID : on peut mettre des id dans les balises comme en html</li>
+                    <li>Attribut class se nomme className (camelcase sauf aria- et data-) </li>
+                    <li>On peut utiliser l'élement "fragment" (ou balise vide, ouverte et fermée) à la place de div, toujours à la racine, ça permet d'avoir plusieurs éléments de premier niveau à l'interieur</li>
+                    <li>toutes les balises doivent être fermée, par exemple img, ou input...Ou autofermantes</li>
+                </ul>
+            <h2>INTERPOLATION de variables JS</h2>
+                <ul>
+                    <li>on crée une variable ex :  const title</li>
+                    <li>à l'interieur de la balise, on peut interpoler cette variable en l'appelant entre {} </li>
+                    <li><a href="./img/react-const.png" target="_blank">exemple</a></li>
+                    <li>on peut interpoler des variables dans les balises et dans les attributs des balises</li>
+                    <li>Dans ces {}, on peut renvoyer n'importe quel noeud react, des chaines de caractères, des chiffres, null, undefined, mais pas d'objets => objet n'est pas un enfant react valide </li>
+                    <li><a href="./img/react-style.png" target="_blank"> on peut mettre des atrtibuts, type id, className, mais aussi attribut style (=css) mais il faut le noter sous forme d'objet. Attention toujours en camelCase</a></li>
+
+                </ul>
+
 
 
     </body>

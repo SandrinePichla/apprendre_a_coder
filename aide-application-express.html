@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../apprendre-a-coder/css/style.css" media="all">
+    <title>Créez une application Express</title>
+</head>
+<body>
+    <nav> 
+        
+        <ul>
+            <li><a href="../apprendre-a-coder/index.html" target="_blank">Accueil</a></li>
+            <li><a href="../apprendre-a-coder/git.html" target="_blank">GIT</a></li>
+            <li><a href="../apprendre-a-coder/aide-visual-studio-code.html" target="_blank">Visual Studio Code</a></li>
+            <li><a href="../apprendre-a-coder/aide-html.html" target="_blank">HTML</a></li>
+            <li><a href="../apprendre-a-coder/aide-css.html" target="_blank">CSS</a></li>  
+            <li><a href="../apprendre-a-coder/aide-javascript.html" target="_blank">JAVASCRIPT</a></li>        
+            <li><a href="../apprendre-a-coder/aide-php.html" target="_blank">PHP</a></li>
+            <li><a href="../apprendre-a-coder/formulaire.html" target="_blank">Formulaire</a></li>
+            <li><a href="../apprendre-a-coder/outils.html" target="_blank">Outils</a></li>            
+            <li><a href="../apprendre-a-coder/page_web_dynamique.html" target="_blank">Créez des pages web dynamiques avec JavaScript</a></li>
+            <li><a href="../apprendre-a-coder/aide-react.html" target="_blank">REACT</a></li>
+             <li><a href="../apprendre-a-coder/accessibilite.html" target="_blank">Accessibilié et référencement</a></li>                   
+            <li><a href="../apprendre-a-coder/aide-api.html" target="_blank">Les API</a></li>
+            <li><a href="../apprendre-a-coder/aide-application-express.html" target="_blank">Créez une application Express</a></li>        
+        </ul>
+    </nav>
+
+    <div class="sites-tests">
+        <ul>
+            <li><a href="../apprendre-a-coder/cv_sandrine_pichla.html" target="_blank">CV</a></li>
+            <li><a href="../apprendre-a-coder/wild-code-school.html" target="_blank" >Wild Code School</a></li>
+            <li><a href="../apprendre-a-coder/tests-js.html" target="_blank" >Tests JAVASCRIPT</a></li>
+            <li><a href="../apprendre-a-coder/cupcake.html" target="_blank">Cupcake</a></li>
+            <li><a href="../apprendre-a-coder/blog-trotter.html" target="_blank">Blog-trotter</a></li>
+            <li><a href="../apprendre-a-coder/zozor.html" target="_blank">Zozor</a></li>   
+            <li><a href="../apprendre-a-coder/furets.html" target="_blank">Furet</a></li>
+            <li><a href="../apprendre-a-coder/sumot.html" target="_blank">Sumot</a></li>
+        </ul>
+    </div>
+
+    <div class="site-externe">    
+        <ul>
+            <li><a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3" target="_blank">Open Class Rooms</a></li>
+            <li><a href="https://grafikart.fr/formations/html" target="_blank">Grafikart HTML</a></li>
+            <li><a href="https://grafikart.fr/formations/css" target="_blank">Grafikart CSS</a></li>
+            <li><a href="https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free" target="_blank">ICONES</a></li>
+            <li><a href="https://mdbootstrap.com/docs/b4/jquery/css/colors/" target="_blank">COULEURS</a></li>
+            <li><a href="https://fonts.google.com/" target="_blank">FONTS</a></li>
+        </ul>
+    </div>
+    <div>
+        <h1>Configurez votre environnement de développement</h1>
+            <ul>
+                <li>Créer un dossier "projet_xx" dans le pc puis taper dans la console vscode : </li>
+                <li>cd frontend pour créer un sous dossier frontend, npm install puis npm run start</li>
+                <li>cd backend pour créer un sous dossier backend et npm init avec point d'entrée = server.js</li>
+                <li><a href="../apprendre-a-coder/img/server.js.png" target="_blank">Créez un fichier server.js à l'intérieur de backend avec le code de démarrage, serveur Node basique démarré avec la méthode  createServer  du package  http</a></li>
+                <li>Installez nodemon : taper npm install -g nodemon .taper nodemon server pour démarrer le serveur,</li>
+                <li>ourvir postman requête GET sur http://localhost:3000</li>
+                <li>Le framework Express est installé et enregistré dans le  package.json  avec npm install express</li>
+                <li>Pour créer une application Express, appelez simplement la méthode  express()</li>
+                <li> fichier app.js <a href="../apprendre-a-coder/img/app.js-v1.png" target="_blank">ici</a></li>
+                <li>fichier server.js <a href="../apprendre-a-coder/img/server.js-v2.png">ici, avec modification d'app.js pour avoir une réponse</a></li>               
+            </ul>
+        
+        <h1>Ajoutez des middlewares</h1>
+            <ul>
+                <li>Un middleware est un bloc de code qui traite les requêtes et réponses de votre application.</li>
+                <li>Une application Express est fondamentalement une série de fonctions appelées middleware. Chaque élément de middleware reçoit les objets request et response , peut les lire, les analyser et les manipuler, le cas échéant. Le middleware Express reçoit également la méthode next , qui permet à chaque middleware de passer l'exécution au middleware suivant.</li>
+                <li><a href="../apprendre-a-coder/img/app.js-v2.png">Création de 4 middleware dans app.js</a></li>
+                <li> <a href="../apprendre-a-coder/img/server.js-v3.png" target="_blank">Améliorer server.js</a></li>
+                <li>Ajouter la normalisation de port (fonction normalizePort), la gestion d'erreur (errorHandler ) et du logging basique à votre serveur Node le rend plus constant et plus facile à déboguer.</li>
+                <li>la fonction normalizePort renvoie un port valide, qu'il soit fourni sous la forme d'un numéro ou d'une chaîne ;</li>
+                <li>la fonction errorHandler  recherche les différentes erreurs et les gère de manière appropriée. Elle est ensuite enregistrée dans le serveur ;</li>
+                <li>un écouteur d'évènements est également enregistré, consignant le port ou le canal nommé sur lequel le serveur s'exécute dans la console.</li>
+            </ul>
+            <h1>Créez une route GET</h1>
+                <ul>
+                    <li><a href="../apprendre-a-coder/img/app.js-v3.png" target="_blank">Créer un middleware vers la route /api/stuff </a></a></li>
+                    <li>app.use('/api/stuff', (req, res, next) => {const stuff = [TABLEAU OBJETS]}</li>
+                    <li>CORS signifie « Cross Origin Resource Sharing »</li>
+                    <li>Système de sécurité qui, par défaut, bloque les appels HTTP entre des serveurs différents, ce qui empêche donc les requêtes malveillantes d'accéder à des ressources sensibles.</li>
+                    <li> Dans notre cas, nous avons deux origines : localhost:3000 et localhost:4200 , et nous souhaiterions qu'elles puissent communiquer entre elles. Pour cela, nous devons ajouter des headers à notre objet  response <a href="../apprendre-a-coder/img/app.js-v4.png" target="_blank">Ici</a></li>
+                    <li>Ces headers permettent : d'accéder à notre API depuis n'importe quelle origine ( '*' ) ;</li>
+                    <li>d'ajouter les headers mentionnés aux requêtes envoyées vers notre API (Origin , X-Requested-With , etc.) ;</li>
+                    <li>d'envoyer des requêtes avec les méthodes mentionnées ( GET ,POST , etc.).</li>
+                    <li> le middleware ne prend pas d'adresse en premier paramètre, afin de s'appliquer à toutes les routes. Cela permettra à toutes les demandes de toutes les origines d'accéder à votre API.</li>
+                </ul>
+            <h1>Résumé</h1>
+                <ul>
+                    <li>La méthode app.use() vous permet d'attribuer un middleware à une route spécifique de votre application.</li>
+                    <li>Le CORS définit comment les serveurs et les navigateurs interagissent, en spécifiant quelles ressources peuvent être demandées de manière légitime – par défaut, les requêtes AJAX sont interdites.</li>
+                    <li>Pour permettre des requêtes cross-origin (et empêcher des erreurs CORS), des headers spécifiques de contrôle d'accès doivent être précisés pour tous vos objets de réponse.</li>
+                </ul>
+            <h1>Créez une route POST</h1>
+            <ul>
+                <li>Pour gérer la requête POST venant de l'application front-end, on a besoin d'en extraire le corps JSON app.use(express.json());</li>
+                <li> passer le middleware à  app.post()  au lieu de  app.use()  , il répondra uniquement aux requêtes de type POST.</li>
+                <li>Express prend toutes les requêtes qui ont comme Content-Type  application/json  et met à disposition leur  body  directement sur l'objet req, ce qui nous permet d'écrire le middleware POST suivant :</li>
+                <li><a href="../apprendre-a-coder/img/app.js-v5.png" target="_blank">code final</a></li>
+            </ul>
+    </div>
+</body>
+</html>
