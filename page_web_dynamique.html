@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../apprendre-a-coder/css/style.css" media="all">
+    <title>Créez des pages web dynamiques avec JavaScript</title>
+</head>
+
+<body>
+    <nav> 
+        <ul>
+            <li><a href="../apprendre-a-coder/index.html" target="_blank">Accueil</a></li>
+            <li><a href="../apprendre-a-coder/git.html" target="_blank">GIT</a></li>
+            <li><a href="../apprendre-a-coder/aide-visual-studio-code.html" target="_blank">Visual Studio Code</a></li>
+            <li><a href="../apprendre-a-coder/aide-html.html" target="_blank">HTML</a></li>
+            <li><a href="../apprendre-a-coder/aide-css.html" target="_blank">CSS</a></li>  
+            <li><a href="../apprendre-a-coder/aide-javascript.html" target="_blank">JAVASCRIPT</a></li>
+            <li><a href="../apprendre-a-coder/page_web_dynamique.html" target="_blank">Créez des pages web dynamiques avec JavaScript</a></li>          
+            <li><a href="../apprendre-a-coder/aide-php.html" target="_blank">PHP</a></li>
+            <li><a href="../apprendre-a-coder/formulaire.html" target="_blank">Formulaire</a></li>
+
+        </ul>
+    </nav>
+
+    <div class="sites-tests">
+        <ul>
+            <li><a href="../apprendre-a-coder/cv_sandrine_pichla.html" target="_blank">CV</a></li>
+            <li><a href="../apprendre-a-coder/wild-code-school.html" target="_blank" >Wild Code School</a></li>
+            <li><a href="../apprendre-a-coder/tests-js.html" target="_blank" >Tests JAVASCRIPT</a></li>
+            <li><a href="../apprendre-a-coder/cupcake.html" target="_blank">Cupcake</a></li>
+            <li><a href="../apprendre-a-coder/blog-trotter.html" target="_blank">Blog-trotter</a></li>
+            <li><a href="../apprendre-a-coder/zozor.html" target="_blank">Zozor</a></li>   
+            <li><a href="../apprendre-a-coder/furets.html" target="_blank">Furet</a></li>
+            <li><a href="../apprendre-a-coder/sumot.html" target="_blank">Sumot</a></li>
+        </ul>
+    </div>
+
+    <div class="site-externe">    
+        <ul>
+            <li><a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3" target="_blank">Open Class Rooms</a></li>
+            <li><a href="https://grafikart.fr/formations/html" target="_blank">Grafikart HTML</a></li>
+            <li><a href="https://grafikart.fr/formations/css" target="_blank">Grafikart CSS</a></li>
+            <li><a href="https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free" target="_blank">ICONES</a></li>
+            <li><a href="https://mdbootstrap.com/docs/b4/jquery/css/colors/" target="_blank">COULEURS</a></li>
+            <li><a href="https://fonts.google.com/" target="_blank">FONTS</a></li>
+        </ul>
+    </div>
+    <h1>les différents formats de données et leur emplacement dans un projet web</h1>
+        <ul>
+            <li>Ls formats des formats textuels (CSV/XML/JSON) / des formats structurés (SQL/tableurs).</li>
+                <ul>
+                    <li>Le format CSV permet de stocker des données simples sous forme de texte. => représenter les données d’un tableau (de type Excel) avec des lignes et des colonnes.Exemple : Nom de la pièce,Prix en euros,Catégorie </li>
+                    <li>Le format XML est souvent utilisé pour la configuration technique des logiciels. => utilise des balises ouvrantes et fermantes pour structurer l’information qu’il contient. Exemple : < Nom > Ampoule LED < /Nom > </li>
+                        <li>le JSON (JavaScript Object Notation) est plus moderne que les deux précédents, et de plus en plus répandu. => transmettre, stocker et configurer des données => langage à tout faire</li>
+                        <li>des tableurs de type Excel, OpenOffice ou LibreOffice, => structurer les informations dans des feuillets, (lignes, colonnes et cellules). =>  stocker et transmettre des données, mais pas ouf</li>
+                    <li>Le format SQL (Structured Query Language) est le plus adapté pour construire un projet web de zéro. Il permet de structurer un nombre important de données (lignes et colonnes), leurs types (nombre, texte court, texte long, numéro de téléphone, etc.), et d’instaurer des règles de gestion.</li>
+                </ul>
+            <li>Les emplacements (“en ligne” (base de données, API en ligne) ou sous forme de fichiers)</li>
+                <ul>
+                    <li>dans des fichiers : comme dans nos dossiers d'ordinateur. </li>
+                    <li>dans des serveurs de base de données, gérés par des intégrateurs et administrateurs afin de garantir leur intégrité et leur bon fonctionnement. Les développeurs interagissent avec ces serveurs à l’aide du langage SQL et d’applications de gestion spécialisées (Oracle, pgAdmin)., </li>
+                    <li>à travers une API en ligne (Application Public Interface) est un service web accessible 24 heures sur 24 => fournir un accès à des données mises à jour régulièrement. Exemple API de météo</li>
+                </ul>
+            <li>Résumé : <br>
+                <ul>
+                    <li> Pour développer un site web depuis zéro, vous utiliserez le format SQL et vous stockerez les données sur un serveur de base de données.</li>
+                    <li>our manipuler des données exportées d’un logiciel ou des fichiers de sauvegarde d’un projet, vous utiliserez plutôt les formats CSV, XML ou JSON, et vous stockerez les données dans des fichiers. </li>
+                    <li>Enfin, pour interagir avec des API en ligne, vous devrez utiliser le format JSON pour les API récentes. Certaines API utilisent aussi le format XML, mais leur nombre reste assez limité. Le JSON a l’avantage d’être plus concis que les autres formats textuels, et d’être facilement compréhensible par les navigateurs</li>
+                </ul>       
+        </ul>
+    <h1>la syntaxe JSON (JavaScript Object Notation).</h1>
+    <h3>Format plus limité que le JavaScript, utilisé par des programmes écrits dans d’autres langages (Python, C, PHP..) => s’adapte à cette diversité d’environnements.Il dispose de :</h3>
+        <ul>
+            <li>4 types primitifs : les nombres, les textes, les booléens, la valeur null</li>
+                <ul>
+                    <li><strong>Les nombres</strong> s’écrivent avec les chiffres de 0 à 9. Décimale (.) et négatifs (-) . Exemple : -9.81 pas de guillemet</li>
+                    <li><strong>Le texte</strong>Exemple : "Un texte en JSON" avec guillemet . Si guillemet dans le texte, précéder d'un backslash \ pour évitement. Exemple : "Le double guillemet \" délimite un texte"</li>
+                    <li><strong>Les booléens et la valeur null</strong>. Les booléens comportent deux valeurs : true et false, null => l’absence de valeur. (pas de "")</li>            
+                </ul>
+            <li>2 types structurants : les objets et les tableaux</li>
+                <ul>
+                    <li><strong>Les tableaux []</strong> Exemple: ["un chat", "Une souris"] ou [0, 1, 2]</li>
+                    <li><strong>Les objets {"propriete" : "valeur"}</strong>Exemple : { "prenom": "Louis" }  { "prenom": "Louis", "age": 19 }</li>        
+                    <li><a href="../apprendre-a-coder/img/json_tableau.png" target="_blank">Récap avec tableau et objets dedans</a></li>
+                </ul>
+        </ul>
+    <h1>Importez les données de notre fichier JSON.</h1>
+    <h2>fonction fetch de JavaScript : const reponse = await fetch("pieces-autos.json"); const pieces = await reponse.json();</h2>
+    <h2><a href="../apprendre-a-coder/img/création_elements_dom.png" target="_blank">Créez de nouveaux éléments du DOM</a></h2>
+        <ul>
+            <li>créer de nouveaux éléments avec createElement</li>
+            <li>afficher les nouveaux éléments avec appendChild</li>
+        </ul>
+    <h1>Choisir entre deux possibilités grâce à l’opérateur ternaire</h1>
+        <ul>
+            <li>Syntaxe générale de l’opérateur ternaire : expression à tester ? valeur si vrai : valeur si faux</li> 
+            <li>Exemple : <strong>article.prix < 35 ? "€" : "€€€" </strong></li>
+        </ul>
+    <h1>Fournir une valeur par défaut grâce à l’opérateur nullish. quand une valeur est null, et donc qu’elle n’a pas de valeur, ou bien lorsqu’elle est undefined, et donc qu’elle n’est pas définie</h1>
+        <ul>
+            <li>expression à tester ?? valeur de substitution</li>
+            <li>Exemple : categorieElement.innerText = article.categorie ?? "(aucune catégorie)";</li>
+        </ul>
+    <h1>Réordonnez et filtrez les fiches produits grâce aux méthodes de tableau (= fonction définie à l’intérieur d’un objet) <strong>sort et filter (réordonner les éléments)</strong></h1>
+    <h2>Réordonnez les fiches produits grâce à la fonction sort</h2>
+    <ul>
+        <li>ajouter un listener au bouton “Trier par prix croissants”</li>
+        <li>nUtiliser la fonction sort qui prend en argument une nouvelle fonction à l’intérieur des parenthèses de sort, sans lui donner de nom. On dit qu’elle est anonyme. Cette fonction anonyme sera appelée par sort pour comparer deux éléments entre eux.</li>
+        <li><a href="../apprendre-a-coder/img/sort.png" target="_blank">Exemple fonction sort : </a>  function (a, b) {  return a.prix - b.prix; } </li>
+        <li>La fonction sort attend un nombre de la part de la fonction anonyme. Le signe de ce nombre (positif, négatif ou nul) sert à indiquer dans quel ordre ranger les deux éléments : si le nombre est positif, alors B sera rangé avant A ... </li>
+        <li>pour garder la liste d'origine dans son ordre d'origine, on peut faire une copie de la liste à trier avec la fonction <strong>Array.from</strong><a href="../apprendre-a-coder/img/Array_from.png" target="_blank"> Exemple</a></li>
+    </ul>
+    <h1>Filtrez les éléments d’une liste grâce à la fonction filter (éliminer les éléments non désirés)</h1>
+    <ul>
+        <li>un listener sur le bouton “Filtrer les pièces non abordables”</li>
+        <li><a href="../apprendre-a-coder/img/filter.png" target="_blank">Exemple de fonction Filter</a> : function (pieces) { return pieces.prix <= 35; }</li>
+        <li>La fonction anonyme doit retourner une valeur booléenne : true si l’élément doit se trouver dans la liste filtrée ou false pas dans la liste.</li>
+    </ul>
+    <h1>Projetez des données avec les fonctions map et lambda</h1>
+    <ul>
+        <li>fonction map : function (piece) { return piece.nom;  } <a href="../apprendre-a-coder/img/lambda_map.png" target="_blank">exemple</a></li>
+        <li>fonction lambda Exemple : const noms = pieces.map(piece => piece.nom); <a href="../apprendre-a-coder/img/map.png" target="_blank">exemple</a></li>
+        <li>Fonction lambda : retourner la propriété d'un objet, faire des multiplications... Exemple : const prix_doubles = pieces.map(piece => piece.prix * 2);</li>
+    </ul>
+    <h1>supprimez les éléments d’une liste avec <strong>splice</strong></h1>
+    <ul>
+        <li>Parcourir la liste des pièces avec une boucle for <strong>de la fin vers le début</strong> (sinon certains éléments ne seraient pas testés)</li>
+        <li>Supprimer les noms avec la fonction splice</li>
+            <ul>
+                <li>Elle prend en argument deux valeurs :</li>
+                    
+                    <li><strong>l’indice</strong> à partir duquel supprimer des éléments</li>
+                    <li><strong>la quantité</strong> d’éléments à supprimer</li>
+            </ul>
+        <li><a href="../apprendre-a-coder/img/splice.png" target="_blank">exemple</a></li>
+    </ul>
+    <h1>Affichez la liste à puce des pièces abordables sur le site</h1>
+    <ul>
+        <li>Utiliser createElement et appendChild</li>
+        <ul>
+            <li>Création de la liste à puces const abordablesElements = document.createElement('ul') et  const nomElement = document.createElement('li')</li>
+            <li>Inserer dans le dossier parent avec abordablesElements.appendChild(nomElement) et document.querySelector('.abordables').appendChild(abordablesElements)</li>
+            <li><a href="../apprendre-a-coder/img/liste_dans_dom.png" target="_blank">Exemple</a></li>
+            <li><a href="../apprendre-a-coder/img/pieces_auto_1.png" target="_blank">Exemple</a> <a href="../apprendre-a-coder/img/pieces_auto_2.png" target="_blank">de filtres</a>,<a href="../apprendre-a-coder/img/pieces_auto_3.png" target="_blank"> tries</a></li>
+        </ul>
+    </ul>
+    <h1>la propriété innerHTML</h1>
+    <ul>
+        <li>la propriété innerText pour modifier le texte d’une balise</li>
+        <li>La propriété <a href="../apprendre-a-coder/img/InnerHTML.png">innerHTML </a>accepte une chaîne de caractères que le navigateur interprétera comme du code HTML. Les balises seront intégrées au DOM et seront affichées à l’écran.</li>
+        <li>Exemple : <strong>efface tout</strong> ce qui se trouve dans la balise class="fiches" : document.querySelector(".fiches").innerHTML = ' '</li>
+    </ul>
+    <h1>les <strong>API</strong> en ligne</h1>
+    <ul>
+        <li>Installer l'API dans le dossier api-http à côté du dossier projet : <a href="../apprendre-a-coder/img/npm-start.png" target="_blank">exemple avec npm-start</a></li>
+        <li>démarrer en tapant nmp-start dans le terminal du projet </li>
+    </ul>
+    <h1>La persistance de la donnée</h1>
+    <ul>
+        <li>un <strong>service web</strong> permet de créer, récupérer, mettre à jour et supprimer des données => persister vos données, => les stocker durablement. Ces manipulations sont sauvegardées jusqu’à la prochaine utilisation.</li>
+            <ul>
+                <li>POST pour la création</li>
+                <li>GET pour la récupération</li>
+                <li>PUT pour la modification</li>
+                <li>DELETE pour la suppression</li>
+            </ul>
+        <li><strong>API</strong> = moyen de communication entre deux logiciels, que ce soit entre différents composants d’une application ou entre deux applications différentes. C’est ce qu’on appelle une abstraction : une façade qui simplifie des mécanismes complexes permettant de fournir un service demandé.</li>
+        <li><strong>Exemple du site météo</strong> : pas besoin de savoir comment calculer la vitesse du vent, l’API me la fournit directement.</li>
+        <li><strong>API HTTP </strong>lorsqu’un service web offre une façade à travers le protocole HTTP</li>
+        <li>le serveur web est un programme informatique qui met les services web à disposition des autres programmes. Le serveur est joignable via une url. le navigateur et le serveur doivent donc communiquer entre eux grâce au protocole HTTP.</li>
+        <li><a href="../apprendre-a-coder/img/navigateur-serveur.png" target="_blank"> Le <strong>protocole HTTP </strong></a>est un ensemble de règles qui régissent la façon de communiquer de deux programmes à travers le réseau informatique. Votre navigateur web utilisera le protocole HTTP pour envoyer des requêtes à destination du serveur.</li>
+        <li>Une <strong>requête HTTP</strong> concerne toujours une ressource. Il s’agit d’un type de donnée que le service web gère, par exemple :
+            <ul>
+                <li>la ressource “pièces automobiles”</li>
+                <li>la ressource “avis utilisateur”</li>
+            </ul>
+        .</li>
+        <li>Les <strong>ressources</strong> sont accessibles à travers des chemins :  url/pieces url/avis</li>
+        <li>L’association de la <strong>ressource et du verbe</strong> permet de décrire l’opération demandée par le navigateur et qui sera traitée par le service web. Par exemple :</li>
+        <ul>
+            <li>GET /pieces  permet de récupérer toutes les pièces automobiles</li>
+            <li>POST /avis  permet de créer un nouvel avis </li>
+            <li>DELETE /avis/42  permet de supprimer l’avis numéro 42</li>
+        </ul>
+        <li>fonction fetch par exemple fetch("http://localhost:8081/pieces") permet d’envoyer une requête GET sur le serveur localhost:8081 pour demander la ressource /pieces. </li>
+    </ul>
+    <h1>programmation asynchrone : </h1>
+         <li>Le navigateur envoie une requête à l’API HTTP, le navigateur ne s’arrête pas de fonctionner le temps d’obtenir la réponse. Il garde en mémoire le fait qu’il attend la réponse à la requête tout en continuant à :</li>
+            <ul>
+                <li>exécuter le JavaScript</li>
+                <li>traiter les autres événements de la page</li>
+                <li>mettre à jour l’affichage</li>
+                <li>et ainsi de suite…</li>
+            </ul>
+        <li>Lorsqu’on a besoin de la réponse du serveur pour exécuter la deuxième ligne (ex on récupère les avis  et que nous devons ensuite les afficher. Nous devons attendre que l’opération asynchrone soit terminée avant d’exécuter la ligne suivante).</li>
+        <ul>
+            <li><strong>await</strong> => attendre que l’opération asynchrone se termine pour reprendre l’exécution du code</li>
+            <li>Exemple : await fetch("http://monsite.fr/ma-ressource"); console.log("Le script continuera après avoir reçu la réponse");</li>
+            <li>ajouter async devant la fonction : piecesElements[i].addEventListener("click", async function (event) { ..... })</li>
+            <li><strong>.then</strong> : l’autre syntaxe asynchrone</li>
+            <li>Exemple : fetch("http://monsite.fr/ma-ressource").then(function () {
+                console.log("Le script continuera après avoir reçu la réponse");
+          });</li>
+          <li>Stockez la réponse du serveur avant de la traiter</li>
+          <li><a href="../apprendre-a-coder/img/data-id.png" target="_blank">décryptage chatGPT</a></li>
+          <li><a href="../apprendre-a-coder/img/fetch_await_data_id.png" target="_blank">Exemple code total HTML, JS et JSON</a></li>
+        </ul>
+        <h1>Sauvegardez les données grâce à une API HTTP</h1>
+        <h3><a href="../apprendre-a-coder/img/fetch_2-argument.png" target="_blank">Exemple : permettre aux utilisateurs de déposer leurs avis sur le site</a> => Personnaliser votre requête avec le deuxième argument de fetch</h3>
+        <ul>
+            <li>fetch("chemin de la ressource", { /* Objet de configuration */ });</li>
+            <li> Objet de configuration en 1er : verbes (GET, POST…) pour désigner l’opération demandée par la requête => {method: "POST"</li>
+            <li> en 2ème, charge utile =>  body: '{"commentaire":"Top produit !"}'</li>
+            <li>en 3ème headers aura comme valeur un objet contenant lui-même une propriété "Content-Type" et une valeur indiquant le type MIME du format de la charge utile => headers: { "Content-Type": "application/json" } }); </li>            
+        </ul>
+        <h1>Sauvegardez les données dans le localStorage : espace de stockage présent en “local”, sur votre appareil. Cet espace de stockage dispose d’une API pour manipuler les données stockées sur l’appareil.</h1>
+        <li><a href="../apprendre-a-coder/img/localstorage.png" target="_blank">Avantage et bonnes pratiques</a></li>
+        <li>logique d'utilisation</li>
+            <ul>
+                <li>Le localStorage stocke uniquement des “valeurs” de type chaînes de caractères. => sérialisation JSON pour stocker des données plus complexes.</li>
+                <li>Chaque chaîne de caractères est identifiée par une “clé”. On parle ainsi de stockage <strong>clé-valeur</strong>.</li>
+            </ul>
+        <li>Utiliser le localStorage</li>
+            <ul>
+                <li>Enregistrez la réponse de l’API grâce à la fonction setltem, qui prend deux arguments</li>
+                    <ul>
+                        <li>la clé : une chaîne de caractères</li>
+                        <li>la valeur à enregistrer : une chaîne de caractères.</li>
+                        <li>Exemple : window.localStorage.setItem("nom", "Les Bonnes Pièces !");</li>
+                    </ul>
+                <li>Récupérez les données des pièces auto grâce à la fonction getltem qui prend qu’un argument : la clé (une chaîne de caractères).</li>
+                    <ul>
+                        <li>Exemple const nomEntreprise = window.localStorage.getItem("nom");</li>
+                    </ul>
+                <li>Supprimez les pièces auto du localStorage grâce à la fonction removeltem</li>
+                    <ul>
+                        <li>window.localStorage.removeItem("nom");</li>
+                    </ul>
+            </ul>
+      
+
+
+    
+
+
+
+
+
+        
+        
+        
+    
+</body>
+</html>
