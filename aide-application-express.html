@@ -8,22 +8,21 @@
 </head>
 <body>
     <nav> 
-        
         <ul>
             <li><a href="../apprendre-a-coder/index.html" target="_blank">Accueil</a></li>
-            <li><a href="../apprendre-a-coder/git.html" target="_blank">GIT</a></li>
-            <li><a href="../apprendre-a-coder/aide-visual-studio-code.html" target="_blank">Visual Studio Code</a></li>
             <li><a href="../apprendre-a-coder/aide-html.html" target="_blank">HTML</a></li>
-            <li><a href="../apprendre-a-coder/aide-css.html" target="_blank">CSS</a></li>  
-            <li><a href="../apprendre-a-coder/aide-javascript.html" target="_blank">JAVASCRIPT</a></li>        
-            <li><a href="../apprendre-a-coder/aide-php.html" target="_blank">PHP</a></li>
+            <li><a href="../apprendre-a-coder/aide-css.html" target="_blank">CSS</a></li>
             <li><a href="../apprendre-a-coder/formulaire.html" target="_blank">Formulaire</a></li>
-            <li><a href="../apprendre-a-coder/outils.html" target="_blank">Outils</a></li>            
-            <li><a href="../apprendre-a-coder/page_web_dynamique.html" target="_blank">Créez des pages web dynamiques avec JavaScript</a></li>
-            <li><a href="../apprendre-a-coder/aide-react.html" target="_blank">REACT</a></li>
-             <li><a href="../apprendre-a-coder/accessibilite.html" target="_blank">Accessibilié et référencement</a></li>                   
+            <li><a href="../apprendre-a-coder/aide-visual-studio-code.html" target="_blank">Visual Studio Code</a></li>
+            <li><a href="../apprendre-a-coder/git.html" target="_blank">GIT</a></li>
+            <li><a href="../apprendre-a-coder/aide-javascript.html" target="_blank">JAVASCRIPT</a></li>
+            <li><a href="../apprendre-a-coder/aide-php.html" target="_blank">PHP</a></li>
+            <li><a href="../apprendre-a-coder/accessibilite.html" target="_blank">Accessibilié et référencement</a></li>
             <li><a href="../apprendre-a-coder/aide-api.html" target="_blank">Les API</a></li>
-            <li><a href="../apprendre-a-coder/aide-application-express.html" target="_blank">Créez une application Express</a></li>        
+            <li><a href="../apprendre-a-coder/page_web_dynamique.html" target="_blank">Créez des pages web dynamiques avec JavaScript</a></li>
+            <li><a href="../apprendre-a-coder/outils.html" target="_blank">Outils</a></li>
+            <li><a href="../apprendre-a-coder/aide-react.html" target="_blank">REACT</a></li>
+            <li><a href="../apprendre-a-coder/aide-application-express.html" target="_blank">Créez une application Express</a></li>
         </ul>
     </nav>
 
@@ -95,11 +94,16 @@
                     <li>Pour permettre des requêtes cross-origin (et empêcher des erreurs CORS), des headers spécifiques de contrôle d'accès doivent être précisés pour tous vos objets de réponse.</li>
                 </ul>
             <h1>Créez une route POST</h1>
+                <ul>
+                    <li>Pour gérer la requête POST venant de l'application front-end, on a besoin d'en extraire le corps JSON app.use(express.json());</li>
+                    <li> passer le middleware à  app.post()  au lieu de  app.use()  , il répondra uniquement aux requêtes de type POST.</li>
+                    <li>Express prend toutes les requêtes qui ont comme Content-Type  application/json  et met à disposition leur  body  directement sur l'objet req, ce qui nous permet d'écrire le middleware POST suivant :</li>
+                    <li><a href="../apprendre-a-coder/img/app.js-v5.png" target="_blank">code final</a></li>
+                </ul>
+            <h1>Bas de données MongoDB</h1>
             <ul>
-                <li>Pour gérer la requête POST venant de l'application front-end, on a besoin d'en extraire le corps JSON app.use(express.json());</li>
-                <li> passer le middleware à  app.post()  au lieu de  app.use()  , il répondra uniquement aux requêtes de type POST.</li>
-                <li>Express prend toutes les requêtes qui ont comme Content-Type  application/json  et met à disposition leur  body  directement sur l'objet req, ce qui nous permet d'écrire le middleware POST suivant :</li>
-                <li><a href="../apprendre-a-coder/img/app.js-v5.png" target="_blank">code final</a></li>
+                <li>créer le cluster sur MongoDB et les utilisateurs</li>
+                <li>Connectez votre API à votre cluster MongoDB : npm install mongoose</li>
             </ul>
     </div>
 </body>
