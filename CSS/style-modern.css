@@ -1,0 +1,137 @@
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Root Variables */
+:root {
+  --background: hsl(240, 10%, 4%);
+  --foreground: hsl(210, 40%, 98%);
+  --primary: hsl(217, 91%, 60%);
+  --secondary: hsl(270, 60%, 55%);
+  --muted-foreground: hsl(215, 20.2%, 65.1%);
+  --gradient-primary: linear-gradient(135deg, hsl(217, 91%, 60%), hsl(270, 60%, 55%));
+  --gradient-hero: linear-gradient(135deg, hsl(240, 10%, 4%) 0%, hsl(240, 8%, 8%) 50%, hsl(240, 6%, 12%) 100%);
+  --shadow-elegant: 0 20px 40px -12px hsl(217, 91%, 60%, 0.3);
+  --radius: 0.75rem;
+  --transition-smooth: all 0.4s ease-in-out;
+}
+
+/* Base Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--muted-foreground);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary);
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+p, li {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Links */
+a {
+  color: var(--primary);
+  text-decoration: underline;
+  transition: var(--transition-smooth);
+}
+
+a:hover {
+  color: var(--secondary);
+}
+
+/* Navbars */
+nav, .sites-tests, .site-externe {
+  margin: 2rem 0;
+  padding: 1rem;
+  background: hsl(240, 8%, 8%);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-elegant);
+}
+
+nav ul, .sites-tests ul, .site-externe ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 1rem;
+  justify-content: center;
+}
+
+nav a, .sites-tests a, .site-externe a {
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  transition: var(--transition-smooth);
+  color: var(--muted-foreground);
+  background-color: transparent;
+}
+
+nav a:hover, .sites-tests a:hover, .site-externe a:hover {
+  background-color: hsla(217, 91%, 60%, 0.1);
+  color: var(--primary);
+}
+
+/* External Link Highlight */
+#lien-externe {
+  background: var(--primary);
+  color: var(--background);
+  text-align: center;
+  padding: 0.75rem;
+  font-weight: 600;
+  border-radius: var(--radius);
+  margin-top: 2rem;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Containers */
+.container, .frame {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.card-elegant {
+  background: hsl(240, 8%, 8%);
+  border: 1px solid hsl(240, 6%, 15%);
+  box-shadow: var(--shadow-elegant);
+  padding: 1rem;
+  border-radius: var(--radius);
+  transition: var(--transition-smooth);
+}
+
+.card-elegant:hover {
+  transform: translateY(-4px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul, .sites-tests ul, .site-externe ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}

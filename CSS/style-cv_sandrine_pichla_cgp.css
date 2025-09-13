@@ -1,15 +1,5 @@
 /*  en-tête  */
 
-@font-face {
-    font-family:'dayrom';
-    src: url('dayrom.eot') format('eot');
-    src: url('dayrom.eot?#iefix') format('embedded-opentype'),
-        url('dayrom.woff') format('woff'),
-        url('dayrom.ttf') format('truetype'),
-        url('dayrom.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
 @font-face {
     font-family:'fa-brands-400';
@@ -36,7 +26,7 @@
 #banniere h1
 {
     color: white;
-    font-family: Dayrom, serif;
+    font-family: 'Inter', system-ui, sans-serif;
     font-size: 2em;
 }
 
@@ -44,7 +34,7 @@
 {
     color:rgb(140, 125, 90);
     font-size: 1em;
-    font-family: Dayrom, serif;
+    font-family: 'Inter', system-ui, sans-serif;
     text-align: center;
     margin-left: 120px;
 
@@ -79,7 +69,7 @@
    padding-right: 50px;
     display: flex;
     color: white;
-    font-family: Dayrom, calibri, serif;
+    font-family: 'Inter', system-ui, sans-serif;
     font-size: 0.8em;
     
 }

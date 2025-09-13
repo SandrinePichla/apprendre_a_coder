@@ -1,17 +1,6 @@
 /*  en-tête  */
 
 @font-face {
-    font-family:'dayrom';
-    src: url('dayrom.eot') format('eot');
-    src: url('dayrom.eot?#iefix') format('embedded-opentype'),
-        url('dayrom.woff') format('woff'),
-        url('dayrom.ttf') format('truetype'),
-        url('dayrom.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family:'fa-brands-400';
     src: url('fa-brands-400.eot') format('eot');
     src: url('fa-brands-400.eot?#iefix') format('embedded-opentype'),
@@ -36,14 +25,14 @@
 #banniere h1
 {
     color: white;
-    font-family: Dayrom, serif;
+    font-family: 'Inter', system-ui, sans-serif;
     font-size: 2em;
 }
 
 #banniere h2
 {
     color:rgb(140, 125, 90);
-    font-family: Dayrom, serif;
+    font-family: 'Inter', system-ui, sans-serif;
     font-size: 0.8em;
 
     
@@ -77,7 +66,7 @@
    padding-right: 50px;
     display: flex;
     color: white;
-    font-family: Dayrom, calibri, serif;
+    font-family: 'Inter', system-ui, sans-serif;
     font-size: 0.8em;
     
 }
